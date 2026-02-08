@@ -6,7 +6,13 @@ let resultIndex = -1;
 let audioCtx = null;
 let oscillator = null;
 let gainNode = null;
+let oscillator2 = null;
+let gainNode2 = null;
 let isPlaying = false;
+let loadingInterval = null;
+let loadingTimeout = null;
+let freqDisplayInterval = null;
+let adCountdownTimer = null;
 
 const introScreen = document.getElementById('intro-screen');
 const questionScreen = document.getElementById('question-screen');
@@ -37,6 +43,12 @@ const adOverlay = document.getElementById('ad-overlay');
 })();
 
 function show(screen) {
+    // Cleanup timers and audio on screen transition
+    if (loadingInterval) { clearInterval(loadingInterval); loadingInterval = null; }
+    if (loadingTimeout) { clearTimeout(loadingTimeout); loadingTimeout = null; }
+    if (freqDisplayInterval) { clearInterval(freqDisplayInterval); freqDisplayInterval = null; }
+    if (isPlaying) stopFrequency();
+    stopWaveVisualization();
     [introScreen, questionScreen, loadingScreen, resultScreen].forEach(s => s.classList.remove('active'));
     screen.classList.add('active');
 }
@@ -68,7 +80,7 @@ document.getElementById('btn-start').addEventListener('click', () => {
 
 function showQuestion() {
     const q = QUESTIONS[currentQ];
-    const progress = ((currentQ) / QUESTIONS.length) * 100;
+    const progress = ((currentQ + 1) / QUESTIONS.length) * 100;
     document.getElementById('progress-fill').style.width = progress + '%';
     document.getElementById('progress-text').textContent = `${currentQ + 1} / ${QUESTIONS.length}`;
     document.getElementById('q-text').textContent = q.text;
@@ -120,18 +132,22 @@ function showLoading() {
         '최종 주파수 확정 중...'
     ];
 
-    const interval = setInterval(() => {
+    loadingInterval = setInterval(() => {
         progress += Math.random() * 15 + 5;
         if (progress >= 100) {
             progress = 100;
-            bar.style.width = '100%';
-            clearInterval(interval);
-            setTimeout(() => showResult(), 500);
+            if (bar) bar.style.width = '100%';
+            clearInterval(loadingInterval);
+            loadingInterval = null;
+            loadingTimeout = setTimeout(() => {
+                showResult();
+                loadingTimeout = null;
+            }, 500);
         } else {
-            bar.style.width = progress + '%';
+            if (bar) bar.style.width = progress + '%';
         }
         const msgIdx = Math.min(Math.floor(progress / 20), messages.length - 1);
-        text.textContent = messages[msgIdx];
+        if (text) text.textContent = messages[msgIdx];
     }, 400);
 }
 
@@ -155,18 +171,23 @@ function showResult() {
     // Wave animation color
     document.documentElement.style.setProperty('--result-color', resultData.color);
 
+    // Clear previous premium content
+    const premiumContent = document.getElementById('premium-content');
+    if (premiumContent) { premiumContent.style.display = 'none'; premiumContent.innerHTML = ''; }
+
     // Frequency display animation
-    const freqDisplay = document.getElementById('freq-display');
+    if (freqDisplayInterval) { clearInterval(freqDisplayInterval); freqDisplayInterval = null; }
     const freqValue = document.getElementById('freq-value');
     let animFreq = 0;
     const targetFreq = resultData.freq;
-    const freqInterval = setInterval(() => {
+    freqDisplayInterval = setInterval(() => {
         animFreq += Math.ceil(targetFreq / 30);
         if (animFreq >= targetFreq) {
             animFreq = targetFreq;
-            clearInterval(freqInterval);
+            clearInterval(freqDisplayInterval);
+            freqDisplayInterval = null;
         }
-        freqValue.textContent = animFreq;
+        if (freqValue) freqValue.textContent = animFreq;
     }, 50);
 
     // Fill result content
@@ -267,8 +288,8 @@ function playFrequency(freq) {
     oscillator.start();
     osc2.start();
 
-    oscillator._osc2 = osc2;
-    oscillator._gain2 = gain2;
+    oscillator2 = osc2;
+    gainNode2 = gain2;
     isPlaying = true;
 
     // Start wave visualization
@@ -278,13 +299,19 @@ function playFrequency(freq) {
 }
 
 function stopFrequency() {
-    if (oscillator) {
+    if (oscillator && gainNode && audioCtx) {
         gainNode.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.3);
-        if (oscillator._gain2) oscillator._gain2.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.3);
+        if (gainNode2) gainNode2.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.3);
+        const oldOsc = oscillator;
+        const oldOsc2 = oscillator2;
         setTimeout(() => {
-            try { oscillator.stop(); } catch(e) {}
-            try { oscillator._osc2.stop(); } catch(e) {}
+            try { oldOsc.stop(); } catch(e) {}
+            try { if (oldOsc2) oldOsc2.stop(); } catch(e) {}
         }, 400);
+        oscillator = null;
+        gainNode = null;
+        oscillator2 = null;
+        gainNode2 = null;
     }
     isPlaying = false;
     stopWaveVisualization();
@@ -293,12 +320,14 @@ function stopFrequency() {
 // Wave visualization
 let waveAnimId = null;
 function startWaveVisualization() {
+    if (waveAnimId) { cancelAnimationFrame(waveAnimId); waveAnimId = null; }
     const canvas = document.getElementById('wave-canvas');
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
-    const w = canvas.width = canvas.offsetWidth * 2;
-    const h = canvas.height = canvas.offsetHeight * 2;
-    ctx.scale(1, 1);
+    if (!ctx) return;
+    const dpr = window.devicePixelRatio || 1;
+    const w = canvas.width = canvas.offsetWidth * dpr;
+    const h = canvas.height = canvas.offsetHeight * dpr;
 
     let phase = 0;
     function drawWave() {
@@ -328,29 +357,32 @@ function startWaveVisualization() {
 }
 
 function stopWaveVisualization() {
-    if (waveAnimId) cancelAnimationFrame(waveAnimId);
+    if (waveAnimId) { cancelAnimationFrame(waveAnimId); waveAnimId = null; }
     const canvas = document.getElementById('wave-canvas');
     if (canvas) {
         const ctx = canvas.getContext('2d');
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        if (ctx) ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
 }
 
 // Premium
 document.getElementById('btn-premium').addEventListener('click', () => {
+    if (adCountdownTimer) { clearInterval(adCountdownTimer); adCountdownTimer = null; }
+
     adOverlay.classList.add('active');
     let countdown = 5;
     const countEl = document.getElementById('ad-countdown');
     const closeBtn = document.getElementById('ad-close');
-    countEl.textContent = countdown;
-    closeBtn.style.display = 'none';
+    if (countEl) countEl.textContent = countdown;
+    if (closeBtn) closeBtn.style.display = 'none';
 
-    const timer = setInterval(() => {
+    adCountdownTimer = setInterval(() => {
         countdown--;
-        countEl.textContent = countdown;
+        if (countEl) countEl.textContent = countdown;
         if (countdown <= 0) {
-            clearInterval(timer);
-            closeBtn.style.display = 'block';
+            clearInterval(adCountdownTimer);
+            adCountdownTimer = null;
+            if (closeBtn) closeBtn.style.display = 'block';
         }
     }, 1000);
 
@@ -358,6 +390,7 @@ document.getElementById('btn-premium').addEventListener('click', () => {
 });
 
 document.getElementById('ad-close').addEventListener('click', () => {
+    if (adCountdownTimer) { clearInterval(adCountdownTimer); adCountdownTimer = null; }
     adOverlay.classList.remove('active');
     displayPremiumContent();
 });
