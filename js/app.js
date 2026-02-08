@@ -382,9 +382,9 @@ function displayPremiumContent() {
 // Share
 document.getElementById('btn-share').addEventListener('click', shareResult);
 function shareResult() {
-    const text = `💕 나의 사랑 주파수: ${resultData.freq}Hz\n${resultData.emoji} ${resultData.title}\n"${resultData.subtitle}"\n\n당신의 사랑 주파수는?\n👉 https://swp1234.github.io/love-frequency/\n\n#사랑주파수 #연애테스트 #LoveFrequency`;
+    const text = `💕 나의 사랑 주파수: ${resultData.freq}Hz\n${resultData.emoji} ${resultData.title}\n"${resultData.subtitle}"\n\n당신의 사랑 주파수는?\n👉 https://dopabrain.com/love-frequency/\n\n#사랑주파수 #연애테스트 #LoveFrequency`;
     if (navigator.share) {
-        navigator.share({ title: '사랑 주파수 테스트', text, url: 'https://swp1234.github.io/love-frequency/' }).catch(() => {});
+        navigator.share({ title: '사랑 주파수 테스트', text, url: 'https://dopabrain.com/love-frequency/' }).catch(() => {});
     } else {
         navigator.clipboard.writeText(text).then(() => alert('결과가 복사되었습니다!')).catch(() => {});
     }
@@ -469,7 +469,7 @@ function generateShareImage() {
     // Branding
     ctx.fillStyle = 'rgba(255,255,255,0.35)';
     ctx.font = '400 22px -apple-system, sans-serif';
-    ctx.fillText('FireTools', w / 2, 1020);
+    ctx.fillText('DopaBrain', w / 2, 1020);
 
     // Download
     const link = document.createElement('a');
