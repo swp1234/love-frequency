@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사랑 주파수 테스트 - 나의 사랑 주파수는 몇 Hz? 💕</title>
+    <meta name="description" content="10가지 질문으로 알아보는 나의 사랑 주파수! 솔페지오 7가지 주파수 중 당신의 사랑 스타일은? 주파수 음악 재생과 궁합 분석까지.">
+    <meta name="keywords" content="사랑 주파수, 연애 테스트, 솔페지오 주파수, 528Hz, 사랑 테스트, 연애 유형, 커플 궁합, 심리테스트, 주파수 음악">
+    <meta name="theme-color" content="#e91e63">
+    <link rel="canonical" href="https://swp1234.github.io/love-frequency/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="사랑 주파수 테스트 💕 나의 사랑은 몇 Hz?">
+    <meta property="og:description" content="10가지 질문으로 찾는 나의 사랑 주파수! 7가지 솔페지오 주파수 중 당신은? 주파수 음악 재생 + 궁합 분석">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://swp1234.github.io/love-frequency/">
+    <meta property="og:image" content="https://swp1234.github.io/love-frequency/icon-512.svg">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="사랑 주파수 테스트 💕">
+    <meta name="twitter:description" content="나의 사랑은 몇 Hz? 솔페지오 주파수로 알아보는 사랑 유형!">
+    <meta name="twitter:image" content="https://swp1234.github.io/love-frequency/icon-512.svg">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Quiz",
+        "name": "사랑 주파수 테스트",
+        "description": "솔페지오 주파수 기반 사랑 유형 테스트. 10문항으로 나의 사랑 주파수를 찾고 궁합까지 분석합니다.",
+        "educationalLevel": "성인",
+        "inLanguage": "ko",
+        "publisher": {
+            "@type": "Organization",
+            "name": "FireTools"
+        }
+    }
+    </script>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.svg">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Intro Screen -->
+    <div id="intro-screen" class="screen intro-screen active">
+        <div class="ad-banner ad-top">광고 영역</div>
+        <div class="intro-icon">💕</div>
+        <h1 class="intro-title">사랑 주파수 테스트</h1>
+        <p class="intro-subtitle">당신의 사랑은 몇 Hz일까요?<br>10가지 질문으로 나만의 사랑 주파수를 찾아보세요</p>
+        <div class="intro-wave"></div>
+        <div class="intro-meta">
+            <span>💕 10문항</span>
+            <span>⏱️ 약 2분</span>
+            <span>🎵 7가지 주파수</span>
+        </div>
+        <button id="btn-start" class="btn-start">주파수 측정 시작</button>
+        <p class="test-count" id="test-count"></p>
+    </div>
+
+    <!-- Question Screen -->
+    <div id="question-screen" class="screen question-screen">
+        <div class="progress-area">
+            <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+            <p class="progress-text" id="progress-text">1 / 10</p>
+        </div>
+        <div class="question-card">
+            <p class="q-text" id="q-text"></p>
+            <div class="q-options" id="q-options"></div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="screen loading-screen">
+        <div class="loading-icon">💕</div>
+        <div class="loading-bar"><div class="loading-fill" id="loading-fill"></div></div>
+        <p class="loading-text" id="loading-text">사랑의 파동을 감지하는 중...</p>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen result-screen">
+        <div class="result-card">
+            <div class="freq-display" id="freq-display">
+                <p class="freq-label">당신의 사랑 주파수</p>
+                <div class="freq-number"><span id="freq-value">0</span><span class="freq-unit">Hz</span></div>
+            </div>
+
+            <div class="wave-container">
+                <canvas id="wave-canvas"></canvas>
+            </div>
+
+            <button id="btn-play-freq" class="btn-play-freq">🎧 주파수 듣기</button>
+
+            <div class="result-emoji" id="result-emoji"></div>
+            <p class="result-name" id="result-name"></p>
+            <h2 class="result-title" id="result-title"></h2>
+            <p class="result-subtitle" id="result-subtitle"></p>
+            <p class="result-desc" id="result-desc"></p>
+
+            <div class="detail-section">
+                <h3>💕 사랑의 특징</h3>
+                <ul id="result-traits"></ul>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">연애 스타일</div>
+                <div class="info-value" id="result-love-style"></div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">최고 궁합</div>
+                <div class="info-value" id="result-best-match"></div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">사랑 조언</div>
+                <div class="info-value" id="result-tip"></div>
+            </div>
+
+            <div class="spectrum-section">
+                <h3>🎵 나의 주파수 스펙트럼</h3>
+                <div class="spectrum-bars" id="spectrum-bars"></div>
+            </div>
+
+            <button id="btn-premium" class="btn-premium">🔓 AI 심층 궁합 분석 & 커플 루틴 보기</button>
+            <div id="premium-content"></div>
+
+            <div class="action-buttons">
+                <button id="btn-share" class="btn-share">📤 공유</button>
+                <button id="btn-save-image" class="btn-save-image">📷 저장</button>
+                <button id="btn-retry" class="btn-retry">🔄 다시</button>
+            </div>
+            <div class="ad-banner ad-bottom">광고 영역</div>
+        </div>
+    </div>
+
+    <!-- Ad Overlay -->
+    <div id="ad-overlay" class="ad-overlay">
+        <div class="ad-modal">
+            <p>잠시 후 AI 심층 궁합 분석 결과를 확인할 수 있습니다</p>
+            <div class="ad-placeholder">광고 영역 (300x250)</div>
+            <div id="ad-countdown">5</div>
+            <button id="ad-close">결과 보기</button>
+        </div>
+    </div>
+
+    <canvas id="share-canvas" width="1080" height="1080" style="display:none;"></canvas>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
