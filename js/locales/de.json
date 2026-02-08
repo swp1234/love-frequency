@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "Love Frequency Test - Wie ist deine Liebes-Frequenz in Hz? 💕",
+    "description": "Entdecke deine Liebes-Frequenz durch 10 Fragen! Welche der 7 Solfeggio-Frequenzen passt zu deinem Liebeszstil? Frequenz-Musik spielen und Kompatibilitätsanalyse inklusive."
+  },
+  "intro": {
+    "title": "Love Frequency Test",
+    "subtitle": "Wie ist deine Liebes-Frequenz in Hz?<br>Finde deine einzigartige Liebes-Frequenz durch 10 unterhaltsame Fragen",
+    "meta1": "💕 10 Fragen",
+    "meta2": "⏱️ Etwa 2 Minuten",
+    "meta3": "🎵 7 Frequenzen",
+    "startBtn": "Frequenz-Test starten",
+    "participantsText": "Menschen haben teilgenommen!"
+  },
+  "loading": {
+    "text": "Erfasse Liebes-Frequenz..."
+  },
+  "result": {
+    "freqLabel": "Deine Liebes-Frequenz",
+    "loveCharacteristics": "💕 Liebes-Merkmale",
+    "loveStyleLabel": "Liebeszstil",
+    "bestMatchLabel": "Beste Passung",
+    "adviceLabel": "Liebes-Rat",
+    "spectrum": "🎵 Mein Frequenz-Spektrum",
+    "playFreqBtn": "🎧 Frequenz abspielen",
+    "stopFreqBtn": "⏹️ Frequenz stoppen",
+    "premiumBtn": "🔓 Tiefe KI-Kompatibilitätsanalyse & Paar-Routinen",
+    "shareBtn": "📤 Teilen",
+    "saveImageBtn": "📷 Speichern",
+    "retryBtn": "🔄 Nochmal versuchen",
+    "recommendations": "Probiere auch diese",
+    "compatibilityChart": "💞 Frequenz-Kompatibilitätschart",
+    "weeklyRoutine": "📅 Wöchentliche Paar-Routine",
+    "dateIdeas": "💑 Datierungs-Ideen",
+    "musicRec": "🎵 Musik-Genre-Empfehlung",
+    "adMessage": "Ergebnis anzeigen",
+    "resultSharedMessage": "Ergebnis kopiert!"
+  },
+  "premium": {
+    "perfectMatch": "Perfekt",
+    "good": "Gut",
+    "normal": "Normal",
+    "needsEffort": "Benötigt Aufwand"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "Teste de Frequência do Amor - Qual é sua Frequência do Amor em Hz? 💕",
+    "description": "Descubra sua frequência do amor através de 10 questões! Qual das 7 frequências Solfeggio corresponde ao seu estilo de amor? Música de frequência de jogo e análise de compatibilidade incluídas."
+  },
+  "intro": {
+    "title": "Teste de Frequência do Amor",
+    "subtitle": "Qual é sua frequência do amor em Hz?<br>Encontre sua frequência de amor única através de 10 questões divertidas",
+    "meta1": "💕 10 Questões",
+    "meta2": "⏱️ Cerca de 2 min",
+    "meta3": "🎵 7 Frequências",
+    "startBtn": "Começar Teste de Frequência",
+    "participantsText": "pessoas participaram!"
+  },
+  "loading": {
+    "text": "Detectando frequência do amor..."
+  },
+  "result": {
+    "freqLabel": "Sua Frequência do Amor",
+    "loveCharacteristics": "💕 Características do Amor",
+    "loveStyleLabel": "Estilo de Amor",
+    "bestMatchLabel": "Melhor Correspondência",
+    "adviceLabel": "Conselho de Amor",
+    "spectrum": "🎵 Meu Espectro de Frequência",
+    "playFreqBtn": "🎧 Reproduzir Frequência",
+    "stopFreqBtn": "⏹️ Parar Frequência",
+    "premiumBtn": "🔓 Análise Profunda de Compatibilidade com IA e Rotinas de Casal",
+    "shareBtn": "📤 Compartilhar",
+    "saveImageBtn": "📷 Salvar",
+    "retryBtn": "🔄 Tentar Novamente",
+    "recommendations": "Experimente também",
+    "compatibilityChart": "💞 Gráfico de Compatibilidade de Frequência",
+    "weeklyRoutine": "📅 Rotina Semanal de Casal",
+    "dateIdeas": "💑 Ideias de Encontros",
+    "musicRec": "🎵 Recomendação de Gênero Musical",
+    "adMessage": "Ver Resultado",
+    "resultSharedMessage": "Resultado copiado!"
+  },
+  "premium": {
+    "perfectMatch": "Perfeito",
+    "good": "Bom",
+    "normal": "Normal",
+    "needsEffort": "Requer Esforço"
+  }
+}

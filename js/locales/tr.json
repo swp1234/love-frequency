@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "Aşk Frekansı Testi - Aşk Frekansın Hz Cinsinden Nedir? 💕",
+    "description": "10 soruda aşk frekansını keşfet! Hangi 7 Solfeggio frekansı senin aşk stiline uyuyor? Frekans müziği dinle ve uyumluluk analizi dahil."
+  },
+  "intro": {
+    "title": "Aşk Frekansı Testi",
+    "subtitle": "Aşk frekansın Hz cinsinden nedir?<br>10 eğlenceli soruda benzersiz aşk frekansını keşfet",
+    "meta1": "💕 10 Soru",
+    "meta2": "⏱️ Yaklaşık 2 dk",
+    "meta3": "🎵 7 Frekans",
+    "startBtn": "Frekans Testini Başlat",
+    "participantsText": "kişi katılmış!"
+  },
+  "loading": {
+    "text": "Aşk frekansı tespit ediliyor..."
+  },
+  "result": {
+    "freqLabel": "Senin Aşk Frekansın",
+    "loveCharacteristics": "💕 Aşk Özellikleri",
+    "loveStyleLabel": "Aşk Stili",
+    "bestMatchLabel": "En İyi Uyum",
+    "adviceLabel": "Aşk Tavsiyesi",
+    "spectrum": "🎵 Benim Frekans Spektrumum",
+    "playFreqBtn": "🎧 Frekansı Çal",
+    "stopFreqBtn": "⏹️ Frekansı Durdur",
+    "premiumBtn": "🔓 YZ Derinlemesine Uyumluluk Analizi & Çift Rutinleri",
+    "shareBtn": "📤 Paylaş",
+    "saveImageBtn": "📷 Kaydet",
+    "retryBtn": "🔄 Tekrar Dene",
+    "recommendations": "Bunları da Dene",
+    "compatibilityChart": "💞 Frekans Uyumluluk Tablosu",
+    "weeklyRoutine": "📅 Çiftin Haftalık Rutini",
+    "dateIdeas": "💑 Randevu Fikirleri",
+    "musicRec": "🎵 Müzik Türü Tavsiyesi",
+    "adMessage": "Sonucu Görüntüle",
+    "resultSharedMessage": "Sonuç kopyalandı!"
+  },
+  "premium": {
+    "perfectMatch": "Mükemmel",
+    "good": "İyi",
+    "normal": "Normal",
+    "needsEffort": "Çalışma Gerekli"
+  }
+}

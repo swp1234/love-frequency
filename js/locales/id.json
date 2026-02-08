@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "Tes Frekuensi Cinta - Berapa Frekuensi Cinta Anda dalam Hz? 💕",
+    "description": "Temukan frekuensi cinta Anda melalui 10 pertanyaan! Manakah dari 7 frekuensi Solfeggio yang cocok dengan gaya cinta Anda? Putar musik frekuensi dan analisis kompatibilitas disertakan."
+  },
+  "intro": {
+    "title": "Tes Frekuensi Cinta",
+    "subtitle": "Berapa frekuensi cinta Anda dalam Hz?<br>Temukan frekuensi cinta unik Anda melalui 10 pertanyaan yang menyenangkan",
+    "meta1": "💕 10 Pertanyaan",
+    "meta2": "⏱️ Sekitar 2 menit",
+    "meta3": "🎵 7 Frekuensi",
+    "startBtn": "Mulai Tes Frekuensi",
+    "participantsText": "orang telah berpartisipasi!"
+  },
+  "loading": {
+    "text": "Mendeteksi frekuensi cinta..."
+  },
+  "result": {
+    "freqLabel": "Frekuensi Cinta Anda",
+    "loveCharacteristics": "💕 Karakteristik Cinta",
+    "loveStyleLabel": "Gaya Cinta",
+    "bestMatchLabel": "Pasangan Terbaik",
+    "adviceLabel": "Saran Cinta",
+    "spectrum": "🎵 Spektrum Frekuensi Saya",
+    "playFreqBtn": "🎧 Putar Frekuensi",
+    "stopFreqBtn": "⏹️ Hentikan Frekuensi",
+    "premiumBtn": "🔓 Analisis Kompatibilitas Mendalam AI & Rutinitas Pasangan",
+    "shareBtn": "📤 Bagikan",
+    "saveImageBtn": "📷 Simpan",
+    "retryBtn": "🔄 Coba Lagi",
+    "recommendations": "Coba Juga",
+    "compatibilityChart": "💞 Bagan Kompatibilitas Frekuensi",
+    "weeklyRoutine": "📅 Rutinitas Pasangan Mingguan",
+    "dateIdeas": "💑 Ide Kencan",
+    "musicRec": "🎵 Rekomendasi Genre Musik",
+    "adMessage": "Lihat Hasil",
+    "resultSharedMessage": "Hasil disalin!"
+  },
+  "premium": {
+    "perfectMatch": "Sempurna",
+    "good": "Baik",
+    "normal": "Normal",
+    "needsEffort": "Perlu Usaha"
+  }
+}

@@ -41,5 +41,23 @@
     "good": "좋음",
     "normal": "보통",
     "needsEffort": "노력필요"
+  },
+  "recommendations": {
+    "mbti": {
+      "name": "MBTI 연애 궁합",
+      "desc": "나와 찰떡인 MBTI 유형은?"
+    },
+    "emotion": {
+      "name": "감정 온도계 테스트",
+      "desc": "나의 감정 온도는 몇 도?"
+    },
+    "kpop": {
+      "name": "K-POP 포지션 테스트",
+      "desc": "나의 아이돌 포지션은?"
+    },
+    "pastlife": {
+      "name": "전생 직업 테스트",
+      "desc": "나의 전생은 어떤 직업?"
+    }
   }
 }

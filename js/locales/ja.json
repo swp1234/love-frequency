@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "Love Frequency Test - あなたのラブフリーケンシーはHz単位で何？ 💕",
+    "description": "10個の質問を通じてあなたのラブフリーケンシーを発見！7つのソルフェジオ周波数のどれがあなたの恋愛スタイルに合う？周波数音楽再生と相性分析を含む。"
+  },
+  "intro": {
+    "title": "ラブフリーケンシーテスト",
+    "subtitle": "あなたのラブフリーケンシーはHz単位で何？<br>10個の楽しい質問を通じてあなたのユニークなラブフリーケンシーを見つけましょう",
+    "meta1": "💕 10問",
+    "meta2": "⏱️ 約2分",
+    "meta3": "🎵 7周波数",
+    "startBtn": "周波数テストを開始",
+    "participantsText": "人が参加しました！"
+  },
+  "loading": {
+    "text": "ラブフリーケンシーを検出中..."
+  },
+  "result": {
+    "freqLabel": "あなたのラブフリーケンシー",
+    "loveCharacteristics": "💕 恋愛の特性",
+    "loveStyleLabel": "恋愛スタイル",
+    "bestMatchLabel": "最高の相手",
+    "adviceLabel": "恋愛アドバイス",
+    "spectrum": "🎵 マイ周波数スペクトラム",
+    "playFreqBtn": "🎧 周波数を再生",
+    "stopFreqBtn": "⏹️ 周波数を停止",
+    "premiumBtn": "🔓 AI深い相性分析とカップルルーティン",
+    "shareBtn": "📤 シェアする",
+    "saveImageBtn": "📷 保存",
+    "retryBtn": "🔄 もう一度試す",
+    "recommendations": "こちらも試してみてください",
+    "compatibilityChart": "💞 周波数相性チャート",
+    "weeklyRoutine": "📅 カップル週間ルーティン",
+    "dateIdeas": "💑 デートアイデア",
+    "musicRec": "🎵 音楽ジャンル推奨",
+    "adMessage": "結果を表示",
+    "resultSharedMessage": "結果がコピーされました！"
+  },
+  "premium": {
+    "perfectMatch": "完璧な相性",
+    "good": "良い相性",
+    "normal": "普通",
+    "needsEffort": "努力が必要"
+  }
+}
