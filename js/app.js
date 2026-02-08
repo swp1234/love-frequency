@@ -236,10 +236,15 @@ function toggleFrequency() {
 }
 
 function playFrequency(freq) {
-    if (!audioCtx) {
-        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    try {
+        if (!audioCtx) {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+    } catch(e) {
+        console.error('Audio not supported:', e);
+        return;
     }
-    if (audioCtx.state === 'suspended') audioCtx.resume();
 
     // Main tone
     oscillator = audioCtx.createOscillator();
