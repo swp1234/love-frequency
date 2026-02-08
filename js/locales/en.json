@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "Love Frequency Test - What's Your Love Frequency in Hz? 💕",
+    "description": "Discover your love frequency through 10 questions! Which of the 7 Solfeggio frequencies matches your love style? Play frequency music and compatibility analysis included."
+  },
+  "intro": {
+    "title": "Love Frequency Test",
+    "subtitle": "What's your love frequency in Hz?<br>Find your unique love frequency through 10 fun questions",
+    "meta1": "💕 10 Questions",
+    "meta2": "⏱️ About 2 min",
+    "meta3": "🎵 7 Frequencies",
+    "startBtn": "Start Frequency Test",
+    "participantsText": "people have participated!"
+  },
+  "loading": {
+    "text": "Detecting love frequency..."
+  },
+  "result": {
+    "freqLabel": "Your Love Frequency",
+    "loveCharacteristics": "💕 Love Characteristics",
+    "loveStyleLabel": "Love Style",
+    "bestMatchLabel": "Best Match",
+    "adviceLabel": "Love Advice",
+    "spectrum": "🎵 My Frequency Spectrum",
+    "playFreqBtn": "🎧 Play Frequency",
+    "stopFreqBtn": "⏹️ Stop Frequency",
+    "premiumBtn": "🔓 AI Deep Compatibility Analysis & Couple Routines",
+    "shareBtn": "📤 Share",
+    "saveImageBtn": "📷 Save",
+    "retryBtn": "🔄 Try Again",
+    "recommendations": "Try These Too",
+    "compatibilityChart": "💞 Frequency Compatibility Chart",
+    "weeklyRoutine": "📅 Couple Weekly Routine",
+    "dateIdeas": "💑 Date Ideas",
+    "musicRec": "🎵 Music Genre Recommendation",
+    "adMessage": "View Result",
+    "resultSharedMessage": "Result copied!"
+  },
+  "premium": {
+    "perfectMatch": "Perfect",
+    "good": "Good",
+    "normal": "Normal",
+    "needsEffort": "Needs Effort"
+  }
+}

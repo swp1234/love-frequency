@@ -50,22 +50,37 @@
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- i18n -->
+    <script src="js/i18n.js"></script>
 </head>
 <body>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button id="lang-toggle" class="lang-btn" title="Change Language">🌐</button>
+        <div id="lang-menu" class="lang-menu hidden">
+            <button class="lang-option" data-lang="ko">한국어</button>
+            <button class="lang-option" data-lang="en">English</button>
+            <button class="lang-option" data-lang="zh">简体中文</button>
+            <button class="lang-option" data-lang="hi">हिन्दी</button>
+            <button class="lang-option" data-lang="ru">Русский</button>
+        </div>
+    </div>
 
     <!-- Intro Screen -->
     <div id="intro-screen" class="screen intro-screen active">
         <div class="ad-banner ad-top">광고 영역</div>
         <div class="intro-icon">💕</div>
-        <h1 class="intro-title">사랑 주파수 테스트</h1>
-        <p class="intro-subtitle">당신의 사랑은 몇 Hz일까요?<br>10가지 질문으로 나만의 사랑 주파수를 찾아보세요</p>
+        <h1 class="intro-title" data-i18n="intro.title">사랑 주파수 테스트</h1>
+        <p class="intro-subtitle" data-i18n="intro.subtitle">당신의 사랑은 몇 Hz일까요?<br>10가지 질문으로 나만의 사랑 주파수를 찾아보세요</p>
         <div class="intro-wave"></div>
         <div class="intro-meta">
-            <span>💕 10문항</span>
-            <span>⏱️ 약 2분</span>
-            <span>🎵 7가지 주파수</span>
+            <span data-i18n="intro.meta1">💕 10문항</span>
+            <span data-i18n="intro.meta2">⏱️ 약 2분</span>
+            <span data-i18n="intro.meta3">🎵 7가지 주파수</span>
         </div>
-        <button id="btn-start" class="btn-start">주파수 측정 시작</button>
+        <button id="btn-start" class="btn-start" data-i18n="intro.startBtn">주파수 측정 시작</button>
         <p class="test-count" id="test-count"></p>
     </div>
 
@@ -85,14 +100,14 @@
     <div id="loading-screen" class="screen loading-screen">
         <div class="loading-icon">💕</div>
         <div class="loading-bar"><div class="loading-fill" id="loading-fill"></div></div>
-        <p class="loading-text" id="loading-text">사랑의 파동을 감지하는 중...</p>
+        <p class="loading-text" id="loading-text" data-i18n="loading.text">사랑의 파동을 감지하는 중...</p>
     </div>
 
     <!-- Result Screen -->
     <div id="result-screen" class="screen result-screen">
         <div class="result-card">
             <div class="freq-display" id="freq-display">
-                <p class="freq-label">당신의 사랑 주파수</p>
+                <p class="freq-label" data-i18n="result.freqLabel">당신의 사랑 주파수</p>
                 <div class="freq-number"><span id="freq-value">0</span><span class="freq-unit">Hz</span></div>
             </div>
 
@@ -100,7 +115,7 @@
                 <canvas id="wave-canvas"></canvas>
             </div>
 
-            <button id="btn-play-freq" class="btn-play-freq">🎧 주파수 듣기</button>
+            <button id="btn-play-freq" class="btn-play-freq" data-i18n="result.playFreqBtn">🎧 주파수 듣기</button>
 
             <div class="result-emoji" id="result-emoji"></div>
             <p class="result-name" id="result-name"></p>
@@ -109,39 +124,39 @@
             <p class="result-desc" id="result-desc"></p>
 
             <div class="detail-section">
-                <h3>💕 사랑의 특징</h3>
+                <h3 data-i18n="result.loveCharacteristics">💕 사랑의 특징</h3>
                 <ul id="result-traits"></ul>
             </div>
 
             <div class="info-row">
-                <div class="info-label">연애 스타일</div>
+                <div class="info-label" data-i18n="result.loveStyleLabel">연애 스타일</div>
                 <div class="info-value" id="result-love-style"></div>
             </div>
             <div class="info-row">
-                <div class="info-label">최고 궁합</div>
+                <div class="info-label" data-i18n="result.bestMatchLabel">최고 궁합</div>
                 <div class="info-value" id="result-best-match"></div>
             </div>
             <div class="info-row">
-                <div class="info-label">사랑 조언</div>
+                <div class="info-label" data-i18n="result.adviceLabel">사랑 조언</div>
                 <div class="info-value" id="result-tip"></div>
             </div>
 
             <div class="spectrum-section">
-                <h3>🎵 나의 주파수 스펙트럼</h3>
+                <h3 data-i18n="result.spectrum">🎵 나의 주파수 스펙트럼</h3>
                 <div class="spectrum-bars" id="spectrum-bars"></div>
             </div>
 
-            <button id="btn-premium" class="btn-premium">🔓 AI 심층 궁합 분석 & 커플 루틴 보기</button>
+            <button id="btn-premium" class="btn-premium" data-i18n="result.premiumBtn">🔓 AI 심층 궁합 분석 & 커플 루틴 보기</button>
             <div id="premium-content"></div>
 
             <div class="action-buttons">
-                <button id="btn-share" class="btn-share">📤 공유</button>
-                <button id="btn-save-image" class="btn-save-image">📷 저장</button>
-                <button id="btn-retry" class="btn-retry">🔄 다시</button>
+                <button id="btn-share" class="btn-share" data-i18n="result.shareBtn">📤 공유</button>
+                <button id="btn-save-image" class="btn-save-image" data-i18n="result.saveImageBtn">📷 저장</button>
+                <button id="btn-retry" class="btn-retry" data-i18n="result.retryBtn">🔄 다시</button>
             </div>
 
             <div class="recommendations-section">
-                <div class="rec-title">이것도 해보세요</div>
+                <div class="rec-title" data-i18n="result.recommendations">이것도 해보세요</div>
                 <div class="rec-grid">
                     <a href="https://dopabrain.com/mbti-love/" class="rec-card" target="_blank">
                         <span class="rec-icon">💕</span>
@@ -184,7 +199,7 @@
             <p>잠시 후 AI 심층 궁합 분석 결과를 확인할 수 있습니다</p>
             <div class="ad-placeholder">광고 영역 (300x250)</div>
             <div id="ad-countdown">5</div>
-            <button id="ad-close">결과 보기</button>
+            <button id="ad-close" data-i18n="result.adMessage">결과 보기</button>
         </div>
     </div>
 

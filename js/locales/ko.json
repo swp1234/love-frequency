@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "사랑 주파수 테스트 - 나의 사랑 주파수는 몇 Hz? 💕",
+    "description": "10가지 질문으로 알아보는 나의 사랑 주파수! 솔페지오 7가지 주파수 중 당신의 사랑 스타일은? 주파수 음악 재생과 궁합 분석까지."
+  },
+  "intro": {
+    "title": "사랑 주파수 테스트",
+    "subtitle": "당신의 사랑은 몇 Hz일까요?<br>10가지 질문으로 나만의 사랑 주파수를 찾아보세요",
+    "meta1": "💕 10문항",
+    "meta2": "⏱️ 약 2분",
+    "meta3": "🎵 7가지 주파수",
+    "startBtn": "주파수 측정 시작",
+    "participantsText": "명이 참여했어요!"
+  },
+  "loading": {
+    "text": "사랑의 파동을 감지하는 중..."
+  },
+  "result": {
+    "freqLabel": "당신의 사랑 주파수",
+    "loveCharacteristics": "💕 사랑의 특징",
+    "loveStyleLabel": "연애 스타일",
+    "bestMatchLabel": "최고 궁합",
+    "adviceLabel": "사랑 조언",
+    "spectrum": "🎵 나의 주파수 스펙트럼",
+    "playFreqBtn": "🎧 주파수 듣기",
+    "stopFreqBtn": "⏹️ 주파수 멈추기",
+    "premiumBtn": "🔓 AI 심층 궁합 분석 & 커플 루틴 보기",
+    "shareBtn": "📤 공유",
+    "saveImageBtn": "📷 저장",
+    "retryBtn": "🔄 다시",
+    "recommendations": "이것도 해보세요",
+    "compatibilityChart": "💞 주파수 궁합표",
+    "weeklyRoutine": "📅 커플 주간 루틴",
+    "dateIdeas": "💑 추천 데이트",
+    "musicRec": "🎵 추천 음악 장르",
+    "adMessage": "결과 보기",
+    "resultSharedMessage": "결과가 복사되었습니다!"
+  },
+  "premium": {
+    "perfectMatch": "완벽",
+    "good": "좋음",
+    "normal": "보통",
+    "needsEffort": "노력필요"
+  }
+}
