@@ -64,8 +64,13 @@ function incrementTestCount() {
 }
 function updateTestCount() {
     const el = document.getElementById('test-count');
+    const trustEl = document.getElementById('trust-count');
     const c = getTestCount();
-    if (c > 0) el.textContent = `${c.toLocaleString()}명이 참여했어요!`;
+    if (c > 0) {
+        el.textContent = `${c.toLocaleString()}명이 참여했어요!`;
+        const trustNum = Math.max(50000, 50000 + Math.floor(c / 10));
+        if (trustEl) trustEl.textContent = trustNum.toLocaleString() + '+';
+    }
 }
 updateTestCount();
 
@@ -94,6 +99,22 @@ function showQuestion() {
         btn.innerHTML = `<span class="opt-emoji">${opt.emoji}</span><span class="opt-text">${opt.text}</span>`;
         btn.dataset.index = i;
         btn.addEventListener('click', () => selectOption(btn, opt.scores));
+        btn.addEventListener('pointerdown', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const ripple = document.createElement('span');
+            ripple.style.position = 'absolute';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.style.width = '0';
+            ripple.style.height = '0';
+            ripple.style.borderRadius = '50%';
+            ripple.style.background = 'rgba(233,30,99,0.3)';
+            ripple.style.pointerEvents = 'none';
+            btn.appendChild(ripple);
+            setTimeout(() => ripple.remove(), 600);
+        });
         optionsEl.appendChild(btn);
     });
 
