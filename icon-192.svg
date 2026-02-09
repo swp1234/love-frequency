@@ -1,13 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192" height="192" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#b0003a"/>
-      <stop offset="100%" style="stop-color:#e91e63"/>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e91e63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ba184f;stop-opacity:1" />
     </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
   </defs>
-  <rect width="192" height="192" rx="40" fill="url(#bg)"/>
-  <!-- Heart -->
-  <path d="M96 145 C60 115 35 90 35 68 C35 48 50 35 68 35 C80 35 90 42 96 52 C102 42 112 35 124 35 C142 35 157 48 157 68 C157 90 132 115 96 145Z" fill="rgba(255,255,255,0.95)"/>
-  <!-- Wave line -->
-  <path d="M40 96 Q58 78 76 96 Q94 114 112 96 Q130 78 148 96" fill="none" stroke="#e91e63" stroke-width="4" stroke-linecap="round"/>
+  <rect width="512" height="512" fill="url(#grad1)"/>
+  <g transform="translate(256, 256)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="200" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+    <text x="0" y="0" font-size="180" text-anchor="middle" dominant-baseline="central" fill="white" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" opacity="0.95">💕</text>
+  </g>
+  <g transform="translate(256, 256)">
+    <circle cx="0" cy="0" r="220" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  </g>
 </svg>
