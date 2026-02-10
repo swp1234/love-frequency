@@ -40,6 +40,13 @@ const adOverlay = document.getElementById('ad-overlay');
             langMenu.classList.add('hidden');
         });
     });
+
+    // Hide app loader
+    const loader = document.getElementById('app-loader');
+    if (loader) {
+        loader.classList.add('hidden');
+        setTimeout(() => loader.remove(), 300);
+    }
 })();
 
 function show(screen) {
