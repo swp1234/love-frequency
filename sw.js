@@ -1,4 +1,4 @@
-const CACHE_NAME = 'love-frequency-v1';
+const CACHE_NAME = 'love-frequency-v2';
 const urlsToCache = [
     './',
     './index.html',
@@ -26,10 +26,12 @@ self.addEventListener('activate', event => {
     );
 });
 
-self.addEventListener('fetch', event => {
-    event.respondWith(
-        caches.match(event.request)
-            .then(response => response || fetch(event.request))
-            .catch(() => caches.match('./index.html'))
+self.addEventListener('fetch', e => {
+    e.respondWith(
+        fetch(e.request).then(r => {
+            const c = r.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(e.request, c));
+            return r;
+        }).catch(() => caches.match(e.request))
     );
 });
