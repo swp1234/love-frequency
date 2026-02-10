@@ -40,7 +40,27 @@
     "perfectMatch": "완벽",
     "good": "좋음",
     "normal": "보통",
-    "needsEffort": "노력필요"
+    "needsEffort": "노력필요",
+    "participantsCount": "명이 참여했어요!",
+    "loadingMessages": {
+      "msg1": "사랑의 파동을 감지하는 중...",
+      "msg2": "감정 주파수를 분석 중...",
+      "msg3": "영혼의 공명 패턴 해석 중...",
+      "msg4": "당신만의 사랑 주파수 튜닝 중...",
+      "msg5": "최종 주파수 확정 중..."
+    },
+    "frequencyButtons": {
+      "play": "주파수 듣기",
+      "stop": "주파수 멈추기"
+    },
+    "compatibilityChart": "💞 주파수 궁합표",
+    "weeklyRoutine": "📅 커플 주간 루틴",
+    "dateIdeas": "💑 추천 데이트",
+    "musicRec": "🎵 추천 음악 장르",
+    "shareText": "💕 나의 사랑 주파수: {freq}Hz\n{emoji} {title}\n\"{subtitle}\"\n\n당신의 사랑 주파수는?\n👉 https://dopabrain.com/love-frequency/\n\n#사랑주파수 #연애테스트 #LoveFrequency",
+    "shareTitle": "사랑 주파수 테스트",
+    "youLoveFrequency": "나의 사랑 주파수는",
+    "testYourFrequency": "당신의 사랑 주파수는? 👉 사랑 주파수 테스트"
   },
   "recommendations": {
     "mbti": {

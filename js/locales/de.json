@@ -40,7 +40,27 @@
     "perfectMatch": "Perfekt",
     "good": "Gut",
     "normal": "Normal",
-    "needsEffort": "Benötigt Aufwand"
+    "needsEffort": "Benötigt Aufwand",
+    "participantsCount": "Menschen haben teilgenommen!",
+    "loadingMessages": {
+      "msg1": "Liebesfrequenz wird erkannt...",
+      "msg2": "Emotionale Frequenz wird analysiert...",
+      "msg3": "Seelenresonanzmuster wird interpretiert...",
+      "msg4": "Deine einzigartige Liebesfrequenz wird abgestimmt...",
+      "msg5": "Frequenz wird abgeschlossen..."
+    },
+    "frequencyButtons": {
+      "play": "Frequenz abspielen",
+      "stop": "Frequenz stoppen"
+    },
+    "compatibilityChart": "💞 Frequenzkompatibilitätschart",
+    "weeklyRoutine": "📅 Wöchentliche Paarroutine",
+    "dateIdeas": "💑 Datumideen",
+    "musicRec": "🎵 Musikgenre-Empfehlung",
+    "shareText": "💕 Meine Liebesfrequenz: {freq}Hz\n{emoji} {title}\n\"{subtitle}\"\n\nWelche ist deine Liebesfrequenz？\n👉 https://dopabrain.com/love-frequency/\n\n#Liebesfrequenz #Liebestest #LoveFrequency",
+    "shareTitle": "Liebesfrequenztest",
+    "youLoveFrequency": "Meine Liebesfrequenz ist",
+    "testYourFrequency": "Welche ist deine Liebesfrequenz？👉 Liebesfrequenztest"
   },
   "recommendations": {
     "mbti": {

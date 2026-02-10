@@ -40,7 +40,27 @@
     "perfectMatch": "Perfeito",
     "good": "Bom",
     "normal": "Normal",
-    "needsEffort": "Requer Esforço"
+    "needsEffort": "Requer Esforço",
+    "participantsCount": "pessoas participaram!",
+    "loadingMessages": {
+      "msg1": "Detectando frequência de amor...",
+      "msg2": "Analisando frequência emocional...",
+      "msg3": "Interpretando padrão de ressonância da alma...",
+      "msg4": "Afinando sua frequência de amor única...",
+      "msg5": "Finalizando frequência..."
+    },
+    "frequencyButtons": {
+      "play": "Reproduzir Frequência",
+      "stop": "Parar Frequência"
+    },
+    "compatibilityChart": "💞 Gráfico de Compatibilidade de Frequência",
+    "weeklyRoutine": "📅 Rotina Semanal do Casal",
+    "dateIdeas": "💑 Ideias de Encontro",
+    "musicRec": "🎵 Recomendação de Gênero Musical",
+    "shareText": "💕 Minha frequência de amor: {freq}Hz\n{emoji} {title}\n\"{subtitle}\"\n\nQual é sua frequência de amor？\n👉 https://dopabrain.com/love-frequency/\n\n#FrequênciadeAmor #TestedeNamero #LoveFrequency",
+    "shareTitle": "Teste de Frequência de Amor",
+    "youLoveFrequency": "Minha frequência de amor é",
+    "testYourFrequency": "Qual é sua frequência de amor？👉 Teste de Frequência de Amor"
   },
   "recommendations": {
     "mbti": {

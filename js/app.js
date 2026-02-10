@@ -67,7 +67,7 @@ function updateTestCount() {
     const trustEl = document.getElementById('trust-count');
     const c = getTestCount();
     if (c > 0) {
-        el.textContent = `${c.toLocaleString()}명이 참여했어요!`;
+        el.textContent = `${c.toLocaleString()}${i18n?.t('premium.participantsCount') || '명이 참여했어요!'}`;
         const trustNum = Math.max(50000, 50000 + Math.floor(c / 10));
         if (trustEl) trustEl.textContent = trustNum.toLocaleString() + '+';
     }
@@ -146,11 +146,11 @@ function showLoading() {
     let progress = 0;
 
     const messages = [
-        '사랑의 파동을 감지하는 중...',
-        '감정 주파수를 분석 중...',
-        '영혼의 공명 패턴 해석 중...',
-        '당신만의 사랑 주파수 튜닝 중...',
-        '최종 주파수 확정 중...'
+        i18n?.t('premium.loadingMessages.msg1') || '사랑의 파동을 감지하는 중...',
+        i18n?.t('premium.loadingMessages.msg2') || '감정 주파수를 분석 중...',
+        i18n?.t('premium.loadingMessages.msg3') || '영혼의 공명 패턴 해석 중...',
+        i18n?.t('premium.loadingMessages.msg4') || '당신만의 사랑 주파수 튜닝 중...',
+        i18n?.t('premium.loadingMessages.msg5') || '최종 주파수 확정 중...'
     ];
 
     loadingInterval = setInterval(() => {
@@ -268,11 +268,11 @@ function toggleFrequency() {
     const btn = document.getElementById('btn-play-freq');
     if (isPlaying) {
         stopFrequency();
-        btn.textContent = `🎧 ${resultData.freq}Hz 주파수 듣기`;
+        btn.textContent = `🎧 ${resultData.freq}Hz ${i18n?.t('premium.frequencyButtons.play') || '주파수 듣기'}`;
         btn.classList.remove('playing');
     } else {
         playFrequency(resultData.freq);
-        btn.textContent = `⏹️ 주파수 멈추기`;
+        btn.textContent = `⏹️ ${i18n?.t('premium.frequencyButtons.stop') || '주파수 멈추기'}`;
         btn.classList.add('playing');
     }
 }
@@ -423,13 +423,16 @@ function displayPremiumContent() {
     const advice = PREMIUM_ADVICE[resultIndex];
 
     // Compatibility chart
-    let compatHTML = '<div class="detail-section"><h3>💞 주파수 궁합표</h3><div class="compat-grid">';
+    let compatHTML = `<div class="detail-section"><h3>${i18n?.t('premium.compatibilityChart') || '💞 주파수 궁합표'}</h3><div class="compat-grid">`;
     const myCompat = COMPATIBILITY[resultIndex];
     const sortedCompat = FREQ_LABELS.map((label, i) => ({ label, score: myCompat[i], result: RESULTS[i] }))
         .sort((a, b) => b.score - a.score);
 
     sortedCompat.forEach(c => {
-        const level = c.score >= 90 ? '완벽' : c.score >= 75 ? '좋음' : c.score >= 60 ? '보통' : '노력필요';
+        const level = c.score >= 90 ? (i18n?.t('premium.perfectMatch') || '완벽') :
+                      c.score >= 75 ? (i18n?.t('premium.good') || '좋음') :
+                      c.score >= 60 ? (i18n?.t('premium.normal') || '보통') :
+                      (i18n?.t('premium.needsEffort') || '노력필요');
         const levelClass = c.score >= 90 ? 'perfect' : c.score >= 75 ? 'good' : c.score >= 60 ? 'normal' : 'low';
         compatHTML += `<div class="compat-item ${levelClass}">
             <span class="compat-emoji">${c.result.emoji}</span>
@@ -442,17 +445,17 @@ function displayPremiumContent() {
     compatHTML += '</div></div>';
 
     // Weekly routine
-    let routineHTML = '<div class="detail-section"><h3>📅 커플 주간 루틴</h3><ul>';
+    let routineHTML = `<div class="detail-section"><h3>${i18n?.t('premium.weeklyRoutine') || '📅 커플 주간 루틴'}</h3><ul>`;
     advice.weeklyRoutine.forEach(r => { routineHTML += `<li>${r}</li>`; });
     routineHTML += '</ul></div>';
 
     // Date ideas
-    let dateHTML = '<div class="detail-section"><h3>💑 추천 데이트</h3><ul>';
+    let dateHTML = `<div class="detail-section"><h3>${i18n?.t('premium.dateIdeas') || '💑 추천 데이트'}</h3><ul>`;
     advice.dateIdeas.forEach(d => { dateHTML += `<li>${d}</li>`; });
     dateHTML += '</ul></div>';
 
     // Music recommendation
-    let musicHTML = `<div class="detail-section"><h3>🎵 추천 음악 장르</h3><p class="music-rec">${advice.musicRec}</p></div>`;
+    let musicHTML = `<div class="detail-section"><h3>${i18n?.t('premium.musicRec') || '🎵 추천 음악 장르'}</h3><p class="music-rec">${advice.musicRec}</p></div>`;
 
     premiumCard.innerHTML = compatHTML + routineHTML + dateHTML + musicHTML;
     premiumCard.scrollIntoView({ behavior: 'smooth' });
@@ -463,11 +466,15 @@ function displayPremiumContent() {
 // Share
 document.getElementById('btn-share').addEventListener('click', shareResult);
 function shareResult() {
-    const text = `💕 나의 사랑 주파수: ${resultData.freq}Hz\n${resultData.emoji} ${resultData.title}\n"${resultData.subtitle}"\n\n당신의 사랑 주파수는?\n👉 https://dopabrain.com/love-frequency/\n\n#사랑주파수 #연애테스트 #LoveFrequency`;
+    const text = (i18n?.t('premium.shareText') || `💕 나의 사랑 주파수: {freq}Hz\n{emoji} {title}\n"{subtitle}"\n\n당신의 사랑 주파수는?\n👉 https://dopabrain.com/love-frequency/\n\n#사랑주파수 #연애테스트 #LoveFrequency`)
+        .replace('{freq}', resultData.freq)
+        .replace('{emoji}', resultData.emoji)
+        .replace('{title}', resultData.title)
+        .replace('{subtitle}', resultData.subtitle);
     if (navigator.share) {
-        navigator.share({ title: '사랑 주파수 테스트', text, url: 'https://dopabrain.com/love-frequency/' }).catch(() => {});
+        navigator.share({ title: i18n?.t('premium.shareTitle') || '사랑 주파수 테스트', text, url: 'https://dopabrain.com/love-frequency/' }).catch(() => {});
     } else {
-        navigator.clipboard.writeText(text).then(() => alert('결과가 복사되었습니다!')).catch(() => {});
+        navigator.clipboard.writeText(text).then(() => alert(i18n?.t('result.resultSharedMessage') || '결과가 복사되었습니다!')).catch(() => {});
     }
     if (typeof gtag === 'function') gtag('event', 'share', { event_category: 'love_frequency' });
 }
@@ -513,7 +520,7 @@ function generateShareImage() {
     ctx.fillStyle = 'rgba(255,255,255,0.7)';
     ctx.font = '600 32px -apple-system, sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('나의 사랑 주파수는', w / 2, 160);
+    ctx.fillText(i18n?.t('premium.youLoveFrequency') || '나의 사랑 주파수는', w / 2, 160);
 
     // Frequency number
     ctx.fillStyle = '#fff';
@@ -545,7 +552,7 @@ function generateShareImage() {
     // CTA
     ctx.fillStyle = 'rgba(255,255,255,0.5)';
     ctx.font = '400 26px -apple-system, sans-serif';
-    ctx.fillText('당신의 사랑 주파수는? 👉 사랑 주파수 테스트', w / 2, 900);
+    ctx.fillText(i18n?.t('premium.testYourFrequency') || '당신의 사랑 주파수는? 👉 사랑 주파수 테스트', w / 2, 900);
 
     // Branding
     ctx.fillStyle = 'rgba(255,255,255,0.35)';

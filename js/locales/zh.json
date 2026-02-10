@@ -40,7 +40,27 @@
     "perfectMatch": "完美",
     "good": "良好",
     "normal": "普通",
-    "needsEffort": "需要努力"
+    "needsEffort": "需要努力",
+    "participantsCount": "人参与了!",
+    "loadingMessages": {
+      "msg1": "正在检测爱频率...",
+      "msg2": "正在分析情感频率...",
+      "msg3": "正在解读灵魂共鸣模式...",
+      "msg4": "正在调整你的独特爱频率...",
+      "msg5": "正在确定最终频率..."
+    },
+    "frequencyButtons": {
+      "play": "播放频率",
+      "stop": "停止频率"
+    },
+    "compatibilityChart": "💞 频率兼容性图表",
+    "weeklyRoutine": "📅 情侣每周例行程序",
+    "dateIdeas": "💑 约会建议",
+    "musicRec": "🎵 音乐流派推荐",
+    "shareText": "💕 我的爱频率: {freq}Hz\n{emoji} {title}\n\"{subtitle}\"\n\n你的爱频率是？\n👉 https://dopabrain.com/love-frequency/\n\n#爱频率 #约会测试 #LoveFrequency",
+    "shareTitle": "爱频率测试",
+    "youLoveFrequency": "我的爱频率是",
+    "testYourFrequency": "你的爱频率是？👉 爱频率测试"
   },
   "recommendations": {
     "mbti": {

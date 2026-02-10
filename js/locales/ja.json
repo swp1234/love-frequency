@@ -40,7 +40,27 @@
     "perfectMatch": "完璧な相性",
     "good": "良い相性",
     "normal": "普通",
-    "needsEffort": "努力が必要"
+    "needsEffort": "努力が必要",
+    "participantsCount": "人が参加しました！",
+    "loadingMessages": {
+      "msg1": "ラブフリーケンシーを検出中...",
+      "msg2": "感情周波数を分析中...",
+      "msg3": "ソウル共鳴パターンを解釈中...",
+      "msg4": "あなたのユニークなラブフリーケンシーをチューニング中...",
+      "msg5": "周波数を最終確定中..."
+    },
+    "frequencyButtons": {
+      "play": "周波数を再生",
+      "stop": "周波数を停止"
+    },
+    "compatibilityChart": "💞 周波数相性チャート",
+    "weeklyRoutine": "📅 カップル週間ルーティン",
+    "dateIdeas": "💑 デートアイデア",
+    "musicRec": "🎵 音楽ジャンル推奨",
+    "shareText": "💕 私のラブフリーケンシー: {freq}Hz\n{emoji} {title}\n\"{subtitle}\"\n\nあなたのラブフリーケンシーは？\n👉 https://dopabrain.com/love-frequency/\n\n#ラブフリーケンシー #恋愛テスト #LoveFrequency",
+    "shareTitle": "ラブフリーケンシーテスト",
+    "youLoveFrequency": "私のラブフリーケンシーは",
+    "testYourFrequency": "あなたのラブフリーケンシーは？👉 ラブフリーケンシーテスト"
   },
   "recommendations": {
     "mbti": {

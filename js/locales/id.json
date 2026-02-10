@@ -40,7 +40,27 @@
     "perfectMatch": "Sempurna",
     "good": "Baik",
     "normal": "Normal",
-    "needsEffort": "Perlu Usaha"
+    "needsEffort": "Perlu Usaha",
+    "participantsCount": "orang telah berpartisipasi!",
+    "loadingMessages": {
+      "msg1": "Mendeteksi frekuensi cinta...",
+      "msg2": "Menganalisis frekuensi emosional...",
+      "msg3": "Menafsirkan pola resonansi jiwa...",
+      "msg4": "Menyetel frekuensi cinta unik Anda...",
+      "msg5": "Menyelesaikan frekuensi..."
+    },
+    "frequencyButtons": {
+      "play": "Putar Frekuensi",
+      "stop": "Hentikan Frekuensi"
+    },
+    "compatibilityChart": "💞 Bagan Kompatibilitas Frekuensi",
+    "weeklyRoutine": "📅 Rutinitas Mingguan Pasangan",
+    "dateIdeas": "💑 Ide Kencan",
+    "musicRec": "🎵 Rekomendasi Genre Musik",
+    "shareText": "💕 Frekuensi cinta saya: {freq}Hz\n{emoji} {title}\n\"{subtitle}\"\n\nBerapa frekuensi cinta Anda？\n👉 https://dopabrain.com/love-frequency/\n\n#FrekuensiCinta #TesCinta #LoveFrequency",
+    "shareTitle": "Tes Frekuensi Cinta",
+    "youLoveFrequency": "Frekuensi cinta saya adalah",
+    "testYourFrequency": "Berapa frekuensi cinta Anda？👉 Tes Frekuensi Cinta"
   },
   "recommendations": {
     "mbti": {

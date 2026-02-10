@@ -40,7 +40,27 @@
     "perfectMatch": "Perfect",
     "good": "Good",
     "normal": "Normal",
-    "needsEffort": "Needs Effort"
+    "needsEffort": "Needs Effort",
+    "participantsCount": "people have participated!",
+    "loadingMessages": {
+      "msg1": "Detecting love frequency...",
+      "msg2": "Analyzing emotional frequency...",
+      "msg3": "Interpreting soul resonance pattern...",
+      "msg4": "Tuning your unique love frequency...",
+      "msg5": "Finalizing frequency..."
+    },
+    "frequencyButtons": {
+      "play": "Play Frequency",
+      "stop": "Stop Frequency"
+    },
+    "compatibilityChart": "💞 Frequency Compatibility Chart",
+    "weeklyRoutine": "📅 Couple Weekly Routine",
+    "dateIdeas": "💑 Date Ideas",
+    "musicRec": "🎵 Music Genre Recommendation",
+    "shareText": "💕 My Love Frequency: {freq}Hz\n{emoji} {title}\n\"{subtitle}\"\n\nWhat's your love frequency?\n👉 https://dopabrain.com/love-frequency/\n\n#LoveFrequency #DatingTest #LoveFrequencyTest",
+    "shareTitle": "Love Frequency Test",
+    "youLoveFrequency": "My Love Frequency is",
+    "testYourFrequency": "What's your love frequency? 👉 Love Frequency Test"
   },
   "recommendations": {
     "mbti": {

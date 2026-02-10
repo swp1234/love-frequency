@@ -40,7 +40,27 @@
     "perfectMatch": "Mükemmel",
     "good": "İyi",
     "normal": "Normal",
-    "needsEffort": "Çalışma Gerekli"
+    "needsEffort": "Çalışma Gerekli",
+    "participantsCount": "kişi katılmış!",
+    "loadingMessages": {
+      "msg1": "Aşk frekansı algılanıyor...",
+      "msg2": "Duygusal frekans analiz ediliyor...",
+      "msg3": "Ruh rezonansı deseni yorumlanıyor...",
+      "msg4": "Senin eşsiz aşk frekansı ayarlanıyor...",
+      "msg5": "Frekans sonuçlandırılıyor..."
+    },
+    "frequencyButtons": {
+      "play": "Frekansı Çal",
+      "stop": "Frekansı Durdur"
+    },
+    "compatibilityChart": "💞 Frekans Uyumluluk Tablosu",
+    "weeklyRoutine": "📅 Çift Haftalık Rutini",
+    "dateIdeas": "💑 Randevu Fikirleri",
+    "musicRec": "🎵 Müzik Türü Önerisi",
+    "shareText": "💕 Benim aşk frekansı: {freq}Hz\n{emoji} {title}\n\"{subtitle}\"\n\nSenin aşk frekansı nedir？\n👉 https://dopabrain.com/love-frequency/\n\n#AşkFrekansı #AşkTesti #LoveFrequency",
+    "shareTitle": "Aşk Frekansı Testi",
+    "youLoveFrequency": "Benim aşk frekansı",
+    "testYourFrequency": "Senin aşk frekansı nedir？👉 Aşk Frekansı Testi"
   },
   "recommendations": {
     "mbti": {
