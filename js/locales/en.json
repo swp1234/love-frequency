@@ -1,7 +1,8 @@
 {
   "app": {
     "title": "Love Frequency Test - What's Your Love Frequency in Hz? 💕",
-    "description": "Discover your love frequency through 10 questions! Which of the 7 Solfeggio frequencies matches your love style? Play frequency music and compatibility analysis included."
+    "description": "Discover your love frequency through 10 questions! Which of the 7 Solfeggio frequencies matches your love style? Play frequency music and compatibility analysis included.",
+    "skipLink": "Skip to main content"
   },
   "intro": {
     "title": "Love Frequency Test",
@@ -61,6 +62,10 @@
     "shareTitle": "Love Frequency Test",
     "youLoveFrequency": "My Love Frequency is",
     "testYourFrequency": "What's your love frequency? 👉 Love Frequency Test"
+  },
+  "ads": {
+    "banner": "Advertisement",
+    "waitMessage": "Your AI compatibility analysis will be ready shortly"
   },
   "recommendations": {
     "mbti": {
