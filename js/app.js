@@ -557,7 +557,7 @@ function generateShareImage() {
     ctx.fillText(resultData.loveStyle, w / 2, 720);
 
     // Best match
-    ctx.fillText(`Best Match: ${resultData.bestMatch}`, w / 2, 770);
+    ctx.fillText((window.i18n?.t('canvas.bestMatch') || 'Best Match:') + ' ' + resultData.bestMatch, w / 2, 770);
 
     // CTA
     ctx.fillStyle = 'rgba(255,255,255,0.5)';
