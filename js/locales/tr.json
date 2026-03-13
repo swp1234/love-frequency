@@ -97,5 +97,18 @@
     "result2": "639 Hz -- Bağlantı ve Uyum",
     "result3": "741 Hz -- Uyanış ve İfade",
     "result4": "396 Hz -- Özgürlük ve Cesaret"
+  },
+  "about": {
+    "whatIsTitle": "Aşk Frekansı Testi Nedir?",
+    "whatIsDesc": "Aşk frekansı testi, solfej frekanslarına dayalı olarak benzersiz romantik titreşiminizi ortaya koyar. Aşka yaklaşımınız hakkında 10 soruya cevap verin ve 7 solfej frekansından hangisinin aşk enerjinizle eşleştiğini keşfedin.",
+    "whatIs1": "Farklı aşk stillerini temsil eden 7 solfej frekansı",
+    "whatIs2": "Romantik tercihler ve duygusal stil hakkında 10 soru",
+    "whatIs3": "Gerçek aşk frekansınızı dinlemek için müzik çalma",
+    "frequenciesTitle": "Aşk Frekanslarını Anlamak",
+    "frequenciesDesc": "Solfej frekansları, şifa ve ruhani büyümeyi teşvik ettiğine inanılan kadim ses titreşimleridir. Ünlü 528Hz, şifa ve derin duygusal bağlarla ilişkili aşk frekansı olarak bilinir.",
+    "freq1": "396Hz: Köklü aşk, güvenlik, güven",
+    "freq2": "528Hz: Aşk frekansı, şifa, derin bağlar",
+    "freq3": "639Hz: Uyumlu aşk, bağlantı, denge",
+    "freq4": "963Hz: Ruhani aşk, ruh bağlantısı, aşkınlık"
   }
 }

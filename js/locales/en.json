@@ -102,5 +102,18 @@
     "result2": "639 Hz -- Connection & Harmony",
     "result3": "741 Hz -- Awakening & Expression",
     "result4": "396 Hz -- Liberation & Courage"
+  },
+  "about": {
+    "whatIsTitle": "What Is the Love Frequency Test?",
+    "whatIsDesc": "The love frequency test reveals your unique romantic vibration based on solfeggio frequencies. Answer 10 questions about your approach to love and relationships to discover which of 7 solfeggio frequencies matches your love energy. Each frequency carries a distinct meaning, from grounding love (396Hz) to spiritual connection (963Hz). Listen to your frequency and explore compatibility.",
+    "whatIs1": "7 solfeggio frequencies representing different love styles",
+    "whatIs2": "10 questions about your romantic preferences and emotional style",
+    "whatIs3": "Music playback to hear your actual love frequency",
+    "frequenciesTitle": "Understanding Love Frequencies",
+    "frequenciesDesc": "Solfeggio frequencies are ancient sound vibrations believed to promote healing and spiritual growth. In the context of love, each frequency resonates with a different aspect of romantic connection. The famous 528Hz is known as the love frequency, associated with healing and deep emotional bonds.",
+    "freq1": "396Hz: Grounding love, security, trust",
+    "freq2": "528Hz: The love frequency, healing, deep bonds",
+    "freq3": "639Hz: Harmonious love, connection, balance",
+    "freq4": "963Hz: Spiritual love, soul connection, transcendence"
   }
 }

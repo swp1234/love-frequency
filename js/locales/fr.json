@@ -97,5 +97,18 @@
     "result2": "639 Hz -- Connexion et Harmonie",
     "result3": "741 Hz -- Éveil et Expression",
     "result4": "396 Hz -- Libération et Courage"
+  },
+  "about": {
+    "whatIsTitle": "Qu'est-ce que le test de fréquence d'amour ?",
+    "whatIsDesc": "Le test de fréquence d'amour révèle votre vibration romantique unique basée sur les fréquences solfège. Répondez à 10 questions sur votre approche de l'amour pour découvrir laquelle des 7 fréquences solfège correspond à votre énergie amoureuse.",
+    "whatIs1": "7 fréquences solfège représentant différents styles d'amour",
+    "whatIs2": "10 questions sur les préférences romantiques et le style émotionnel",
+    "whatIs3": "Lecture musicale pour écouter votre fréquence d'amour réelle",
+    "frequenciesTitle": "Comprendre les fréquences d'amour",
+    "frequenciesDesc": "Les fréquences solfège sont d'anciennes vibrations sonores censées favoriser la guérison et la croissance spirituelle. La célèbre 528Hz est connue comme la fréquence de l'amour, associée à la guérison et aux liens émotionnels profonds.",
+    "freq1": "396Hz : Amour ancré, sécurité, confiance",
+    "freq2": "528Hz : La fréquence de l'amour, guérison, liens profonds",
+    "freq3": "639Hz : Amour harmonieux, connexion, équilibre",
+    "freq4": "963Hz : Amour spirituel, connexion d'âme, transcendance"
   }
 }

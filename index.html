@@ -90,6 +90,70 @@
     }
     </script>
 
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dopabrain.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Tests", "item": "https://dopabrain.com/portal/" },
+            { "@type": "ListItem", "position": 3, "name": "Relationship Tests", "item": "https://dopabrain.com/portal/" },
+            { "@type": "ListItem", "position": 4, "name": "Love Frequency", "item": "https://dopabrain.com/love-frequency/" }
+        ]
+    }
+    </script>
+
+    <!-- FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the love frequency test?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The love frequency test is a personality quiz that determines your unique love vibration based on solfeggio frequencies. By answering 10 questions about your romantic preferences and relationship style, the test matches you with one of 7 solfeggio frequencies that represents your love energy."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does the love frequency test work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The test asks 10 questions about your approach to love, relationships, and emotional expression. Your answers are scored across 7 solfeggio frequency types. The dominant frequency becomes your love frequency, with music playback so you can actually hear your frequency vibration."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does my love frequency mean?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Each solfeggio frequency carries a unique meaning in love: 396Hz represents grounding love, 417Hz transformative love, 528Hz healing love (the love frequency), 639Hz harmonious love, 741Hz expressive love, 852Hz intuitive love, and 963Hz spiritual love. Your frequency reflects your romantic style and emotional energy."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is the love frequency test based on psychology?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The test combines personality psychology concepts with solfeggio frequency theory for entertainment and self-reflection. While solfeggio frequencies have historical roots in music therapy, the personality matching is designed for fun self-discovery rather than clinical assessment."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I share my love frequency results?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! After completing the test, you can share your love frequency results via social media, copy the link, or download a shareable image card. You can also compare your frequency with partners and friends to check love compatibility."
+                }
+            }
+        ]
+    }
+    </script>
+
     <!-- PWA -->
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="icon-192.svg" type="image/svg+xml">
@@ -265,6 +329,33 @@
     </div>
 
     <canvas id="share-canvas" width="1080" height="1080" style="display:none;"></canvas>
+
+    <!-- About Section (SEO) -->
+    <section style="max-width:420px;margin:24px auto;padding:0 16px;" id="about-love-frequency">
+        <details style="background:rgba(233,30,99,0.08);border:1px solid rgba(233,30,99,0.2);border-radius:12px;margin-bottom:12px;overflow:hidden;">
+            <summary style="padding:16px 20px;cursor:pointer;font-weight:700;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center;" data-i18n="about.whatIsTitle">What Is the Love Frequency Test?</summary>
+            <div style="padding:0 20px 16px;font-size:14px;line-height:1.7;opacity:0.8;">
+                <p data-i18n="about.whatIsDesc">The love frequency test reveals your unique romantic vibration based on solfeggio frequencies. Answer 10 questions about your approach to love and relationships to discover which of 7 solfeggio frequencies matches your love energy. Each frequency carries a distinct meaning, from grounding love (396Hz) to spiritual connection (963Hz). Listen to your frequency and explore compatibility.</p>
+                <ul style="margin-top:8px;padding-left:20px;">
+                    <li data-i18n="about.whatIs1">7 solfeggio frequencies representing different love styles</li>
+                    <li data-i18n="about.whatIs2">10 questions about your romantic preferences and emotional style</li>
+                    <li data-i18n="about.whatIs3">Music playback to hear your actual love frequency</li>
+                </ul>
+            </div>
+        </details>
+        <details style="background:rgba(233,30,99,0.08);border:1px solid rgba(233,30,99,0.2);border-radius:12px;overflow:hidden;">
+            <summary style="padding:16px 20px;cursor:pointer;font-weight:700;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center;" data-i18n="about.frequenciesTitle">Understanding Love Frequencies</summary>
+            <div style="padding:0 20px 16px;font-size:14px;line-height:1.7;opacity:0.8;">
+                <p data-i18n="about.frequenciesDesc">Solfeggio frequencies are ancient sound vibrations believed to promote healing and spiritual growth. In the context of love, each frequency resonates with a different aspect of romantic connection. The famous 528Hz is known as the love frequency, associated with healing and deep emotional bonds. Your result reflects your dominant love energy pattern.</p>
+                <ul style="margin-top:8px;padding-left:20px;">
+                    <li data-i18n="about.freq1">396Hz: Grounding love, security, trust</li>
+                    <li data-i18n="about.freq2">528Hz: The love frequency, healing, deep bonds</li>
+                    <li data-i18n="about.freq3">639Hz: Harmonious love, connection, balance</li>
+                    <li data-i18n="about.freq4">963Hz: Spiritual love, soul connection, transcendence</li>
+                </ul>
+            </div>
+        </details>
+    </section>
 
             <!-- Footer with Home Link -->
     <footer class="game-footer">
