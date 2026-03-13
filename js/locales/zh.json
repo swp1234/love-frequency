@@ -82,5 +82,12 @@
   },
   "canvas": {
     "bestMatch": "最佳匹配："
+  },
+  "related": {
+    "title": "探索更多",
+    "nameMatch": "姓名配对",
+    "zodiacMatch": "星座配对",
+    "loveLanguage": "爱的语言",
+    "attachmentStyle": "依恋类型"
   }
 }

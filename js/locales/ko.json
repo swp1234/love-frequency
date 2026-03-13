@@ -87,5 +87,12 @@
   },
   "canvas": {
     "bestMatch": "최적의 매칭:"
+  },
+  "related": {
+    "title": "더 많은 콘텐츠",
+    "nameMatch": "이름 궁합",
+    "zodiacMatch": "별자리 궁합",
+    "loveLanguage": "사랑의 언어",
+    "attachmentStyle": "애착유형"
   }
 }

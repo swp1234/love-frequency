@@ -82,5 +82,12 @@
   },
   "canvas": {
     "bestMatch": "En iyi eşleşme:"
+  },
+  "related": {
+    "title": "Daha fazla keşfet",
+    "nameMatch": "İsim uyumu",
+    "zodiacMatch": "Burç uyumu",
+    "loveLanguage": "Aşk dili",
+    "attachmentStyle": "Bağlanma tarzı"
   }
 }

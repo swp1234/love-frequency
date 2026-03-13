@@ -82,5 +82,12 @@
   },
   "canvas": {
     "bestMatch": "Meilleur match :"
+  },
+  "related": {
+    "title": "À découvrir",
+    "nameMatch": "Compatibilité des prénoms",
+    "zodiacMatch": "Compatibilité zodiacale",
+    "loveLanguage": "Langage amoureux",
+    "attachmentStyle": "Style d'attachement"
   }
 }

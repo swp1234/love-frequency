@@ -87,5 +87,12 @@
   },
   "canvas": {
     "bestMatch": "Best Match:"
+  },
+  "related": {
+    "title": "More to Explore",
+    "nameMatch": "Name Match",
+    "zodiacMatch": "Zodiac Match",
+    "loveLanguage": "Love Language",
+    "attachmentStyle": "Attachment Style"
   }
 }

@@ -82,5 +82,12 @@
   },
   "canvas": {
     "bestMatch": "ベストマッチ："
+  },
+  "related": {
+    "title": "もっと楽しむ",
+    "nameMatch": "名前相性",
+    "zodiacMatch": "星座相性",
+    "loveLanguage": "愛の言語",
+    "attachmentStyle": "愛着タイプ"
   }
 }

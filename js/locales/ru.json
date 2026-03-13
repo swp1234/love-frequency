@@ -82,5 +82,12 @@
   },
   "canvas": {
     "bestMatch": "Лучшая пара:"
+  },
+  "related": {
+    "title": "Ещё интересное",
+    "nameMatch": "Совместимость имён",
+    "zodiacMatch": "Совместимость знаков",
+    "loveLanguage": "Язык любви",
+    "attachmentStyle": "Тип привязанности"
   }
 }

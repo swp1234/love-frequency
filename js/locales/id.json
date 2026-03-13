@@ -82,5 +82,12 @@
   },
   "canvas": {
     "bestMatch": "Pasangan terbaik:"
+  },
+  "related": {
+    "title": "Jelajahi lainnya",
+    "nameMatch": "Kecocokan nama",
+    "zodiacMatch": "Kecocokan zodiak",
+    "loveLanguage": "Bahasa cinta",
+    "attachmentStyle": "Gaya kelekatan"
   }
 }

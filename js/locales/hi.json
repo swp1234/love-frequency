@@ -82,5 +82,12 @@
   },
   "canvas": {
     "bestMatch": "सर्वश्रेष्ठ मैच:"
+  },
+  "related": {
+    "title": "और खोजें",
+    "nameMatch": "नाम मिलान",
+    "zodiacMatch": "राशि मिलान",
+    "loveLanguage": "प्रेम भाषा",
+    "attachmentStyle": "लगाव शैली"
   }
 }

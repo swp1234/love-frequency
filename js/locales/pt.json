@@ -82,5 +82,12 @@
   },
   "canvas": {
     "bestMatch": "Melhor par:"
+  },
+  "related": {
+    "title": "Explore mais",
+    "nameMatch": "Compatibilidade de nomes",
+    "zodiacMatch": "Compatibilidade zodiacal",
+    "loveLanguage": "Linguagem do amor",
+    "attachmentStyle": "Estilo de apego"
   }
 }
