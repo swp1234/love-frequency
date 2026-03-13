@@ -89,5 +89,13 @@
     "zodiacMatch": "Kecocokan zodiak",
     "loveLanguage": "Bahasa cinta",
     "attachmentStyle": "Gaya kelekatan"
+  },
+  "engage": {
+    "cta": "Temukan frekuensi cintamu",
+    "proof": "hati telah disetel",
+    "result1": "528 Hz -- Frekuensi Cinta",
+    "result2": "639 Hz -- Koneksi & Harmoni",
+    "result3": "741 Hz -- Kebangkitan & Ekspresi",
+    "result4": "396 Hz -- Pembebasan & Keberanian"
   }
 }

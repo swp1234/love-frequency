@@ -89,5 +89,13 @@
     "zodiacMatch": "Compatibilité zodiacale",
     "loveLanguage": "Langage amoureux",
     "attachmentStyle": "Style d'attachement"
+  },
+  "engage": {
+    "cta": "Trouvez votre fréquence d'amour",
+    "proof": "coeurs ont été accordés",
+    "result1": "528 Hz -- La Fréquence de l'Amour",
+    "result2": "639 Hz -- Connexion et Harmonie",
+    "result3": "741 Hz -- Éveil et Expression",
+    "result4": "396 Hz -- Libération et Courage"
   }
 }

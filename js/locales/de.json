@@ -89,5 +89,13 @@
     "zodiacMatch": "Sternzeichen-Match",
     "loveLanguage": "Liebessprache",
     "attachmentStyle": "Bindungsstil"
+  },
+  "engage": {
+    "cta": "Finde deine Liebesfrequenz",
+    "proof": "Herzen wurden gestimmt",
+    "result1": "528 Hz -- Die Liebesfrequenz",
+    "result2": "639 Hz -- Verbindung & Harmonie",
+    "result3": "741 Hz -- Erwachen & Ausdruck",
+    "result4": "396 Hz -- Befreiung & Mut"
   }
 }

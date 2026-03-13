@@ -94,5 +94,13 @@
     "zodiacMatch": "Zodiac Match",
     "loveLanguage": "Love Language",
     "attachmentStyle": "Attachment Style"
+  },
+  "engage": {
+    "cta": "Find Your Love Frequency",
+    "proof": "hearts have been tuned",
+    "result1": "528 Hz -- The Love Frequency",
+    "result2": "639 Hz -- Connection & Harmony",
+    "result3": "741 Hz -- Awakening & Expression",
+    "result4": "396 Hz -- Liberation & Courage"
   }
 }

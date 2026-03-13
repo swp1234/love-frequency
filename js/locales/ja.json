@@ -89,5 +89,13 @@
     "zodiacMatch": "星座相性",
     "loveLanguage": "愛の言語",
     "attachmentStyle": "愛着タイプ"
+  },
+  "engage": {
+    "cta": "あなたの愛の周波数を見つけよう",
+    "proof": "人の心がチューニングされました",
+    "result1": "528 Hz -- 愛の周波数",
+    "result2": "639 Hz -- つながりと調和",
+    "result3": "741 Hz -- 覚醒と表現",
+    "result4": "396 Hz -- 解放と勇気"
   }
 }

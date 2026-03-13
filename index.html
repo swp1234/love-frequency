@@ -138,23 +138,42 @@
 
     <!-- Intro Screen -->
     <div id="intro-screen" class="screen intro-screen active" tabindex="-1">
-        <div class="ad-banner ad-top" data-i18n="ads.banner">광고 영역</div>
-        <div class="intro-icon">💕</div>
-        <h1 class="intro-title" data-i18n="intro.title">사랑 주파수 테스트</h1>
-        <p class="intro-subtitle" data-i18n="intro.subtitle">당신의 사랑은 몇 Hz일까요?<br>10가지 질문으로 나만의 사랑 주파수를 찾아보세요</p>
+        <div class="ad-banner ad-top" data-i18n="ads.banner">Ad area</div>
+
+        <!-- Hero: Pulsing Heart Wave -->
+        <div class="hero-heart-wave">
+            <div class="heart-core">&#128151;</div>
+            <div class="heart-ring"></div>
+            <div class="heart-ring"></div>
+            <div class="heart-ring"></div>
+        </div>
+
+        <h1 class="intro-title" data-i18n="intro.title">Love Frequency Test</h1>
+        <p class="intro-subtitle" data-i18n="intro.subtitle">What's your love frequency in Hz?<br>Find your unique love frequency through 10 fun questions</p>
         <div class="intro-wave"></div>
         <div class="intro-meta">
-            <span data-i18n="intro.meta1">💕 10문항</span>
-            <span data-i18n="intro.meta2">⏱️ 약 2분</span>
-            <span data-i18n="intro.meta3">🎵 7가지 주파수</span>
+            <span data-i18n="intro.meta1">&#128149; 10 Questions</span>
+            <span data-i18n="intro.meta2">&#9202;&#65039; About 2 min</span>
+            <span data-i18n="intro.meta3">&#127925; 7 Frequencies</span>
         </div>
-        <!-- Trust Badge -->
-        <div class="trust-badge">
-            <span class="badge-icon">🔥</span>
-            <span class="badge-text" id="trust-count">50,000+</span>
-            <span class="badge-label" data-i18n="intro.badge">명이 테스트 완료</span>
+
+        <!-- Result Preview Carousel -->
+        <div class="result-carousel" aria-live="polite" style="text-align:center;">
+            <div class="carousel-track">
+                <div class="carousel-item" data-i18n="engage.result1">528 Hz -- The Love Frequency</div>
+                <div class="carousel-item" data-i18n="engage.result2">639 Hz -- Connection & Harmony</div>
+                <div class="carousel-item" data-i18n="engage.result3">741 Hz -- Awakening & Expression</div>
+                <div class="carousel-item" data-i18n="engage.result4">396 Hz -- Liberation & Courage</div>
+            </div>
         </div>
-        <button id="btn-start" class="btn-start" data-i18n="intro.startBtn">주파수 측정 시작</button>
+
+        <!-- Social Proof Badge (upgraded) -->
+        <div class="social-proof-badge" style="display:flex;justify-content:center;">
+            <span class="badge-count">72,000+</span>
+            <span class="badge-label" data-i18n="engage.proof">hearts have been tuned</span>
+        </div>
+
+        <button id="btn-start" class="btn-start" data-i18n="engage.cta">Find Your Love Frequency</button>
         <p class="test-count" id="test-count"></p>
     </div>
 

@@ -94,5 +94,13 @@
     "zodiacMatch": "별자리 궁합",
     "loveLanguage": "사랑의 언어",
     "attachmentStyle": "애착유형"
+  },
+  "engage": {
+    "cta": "나의 사랑 주파수 찾기",
+    "proof": "개의 마음이 튜닝되었습니다",
+    "result1": "528 Hz -- 사랑의 주파수",
+    "result2": "639 Hz -- 연결과 조화",
+    "result3": "741 Hz -- 각성과 표현",
+    "result4": "396 Hz -- 해방과 용기"
   }
 }

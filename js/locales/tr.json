@@ -89,5 +89,13 @@
     "zodiacMatch": "Burç uyumu",
     "loveLanguage": "Aşk dili",
     "attachmentStyle": "Bağlanma tarzı"
+  },
+  "engage": {
+    "cta": "Aşk frekansını bul",
+    "proof": "kalp ayarlandı",
+    "result1": "528 Hz -- Aşk Frekansı",
+    "result2": "639 Hz -- Bağlantı ve Uyum",
+    "result3": "741 Hz -- Uyanış ve İfade",
+    "result4": "396 Hz -- Özgürlük ve Cesaret"
   }
 }
