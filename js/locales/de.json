@@ -86,9 +86,9 @@
   "related": {
     "title": "Mehr entdecken",
     "nameMatch": "Namenskompatibilität",
-    "zodiacMatch": "Sternzeichen-Match",
     "loveLanguage": "Liebessprache",
-    "attachmentStyle": "Bindungsstil"
+    "attachmentStyle": "Bindungsstil",
+    "mbtiLove": "MBTI Liebeskompatibilität"
   },
   "engage": {
     "cta": "Finde deine Liebesfrequenz",

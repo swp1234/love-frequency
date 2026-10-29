@@ -86,9 +86,9 @@
   "related": {
     "title": "もっと楽しむ",
     "nameMatch": "名前相性",
-    "zodiacMatch": "星座相性",
     "loveLanguage": "愛の言語",
-    "attachmentStyle": "愛着タイプ"
+    "attachmentStyle": "愛着タイプ",
+    "mbtiLove": "MBTI 恋愛相性"
   },
   "engage": {
     "cta": "あなたの愛の周波数を見つけよう",

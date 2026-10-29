@@ -86,9 +86,9 @@
   "related": {
     "title": "Ещё интересное",
     "nameMatch": "Совместимость имён",
-    "zodiacMatch": "Совместимость знаков",
     "loveLanguage": "Язык любви",
-    "attachmentStyle": "Тип привязанности"
+    "attachmentStyle": "Тип привязанности",
+    "mbtiLove": "MBTI Совместимость"
   },
   "engage": {
     "cta": "Найди свою частоту любви",

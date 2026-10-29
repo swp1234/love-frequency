@@ -86,9 +86,9 @@
   "related": {
     "title": "Jelajahi lainnya",
     "nameMatch": "Kecocokan nama",
-    "zodiacMatch": "Kecocokan zodiak",
     "loveLanguage": "Bahasa cinta",
-    "attachmentStyle": "Gaya kelekatan"
+    "attachmentStyle": "Gaya kelekatan",
+    "mbtiLove": "Kecocokan MBTI"
   },
   "engage": {
     "cta": "Temukan frekuensi cintamu",

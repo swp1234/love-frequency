@@ -1,3 +1,24 @@
+
+function preserveLanguageLinks() {
+    var currentLang = (typeof i18n !== 'undefined' && typeof i18n.getCurrentLanguage === 'function' ? i18n.getCurrentLanguage() : null) || (new URLSearchParams(window.location.search).get('lang')) || 'ko';
+    var links = document.querySelectorAll('a[href^="/"], .related-card');
+    var base = (window.location.origin && window.location.origin !== 'null') ? window.location.origin : 'https://dopabrain.com';
+    links.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (!href || href.startsWith('http') || href.startsWith('#')) return;
+        try {
+            var url = new URL(href, base);
+            url.searchParams.set('lang', currentLang);
+            link.setAttribute('href', url.pathname + url.search);
+        } catch(e) {}
+    });
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', preserveLanguageLinks);
+} else {
+    preserveLanguageLinks();
+}
+
 // Love Frequency Test - Main Application
 let currentQ = 0;
 let allScores = []; // array of score arrays per question
@@ -25,6 +46,7 @@ const adOverlay = document.getElementById('ad-overlay');
     try {
         await i18n.loadTranslations(i18n.getCurrentLanguage());
         i18n.updateUI();
+        preserveLanguageLinks();
         const langToggle = document.getElementById('lang-toggle');
         const langMenu = document.getElementById('lang-menu');
         const langOptions = document.querySelectorAll('.lang-option');
@@ -36,6 +58,7 @@ const adOverlay = document.getElementById('ad-overlay');
         langOptions.forEach(opt => {
             opt.addEventListener('click', async () => {
                 await i18n.setLanguage(opt.getAttribute('data-lang'));
+                preserveLanguageLinks();
                 langOptions.forEach(o => o.classList.remove('active'));
                 opt.classList.add('active');
                 langMenu.classList.add('hidden');
@@ -47,6 +70,7 @@ const adOverlay = document.getElementById('ad-overlay');
         const loader = document.getElementById('app-loader');
         if (loader) {
             loader.classList.add('hidden');
+            preserveLanguageLinks();
             setTimeout(() => loader.remove(), 300);
         }
     }
@@ -63,26 +87,7 @@ function show(screen) {
     screen.classList.add('active');
 }
 
-// Test count
-function getTestCount() {
-    return parseInt(localStorage.getItem('love_freq_test_count') || '0');
-}
-function incrementTestCount() {
-    const c = getTestCount() + 1;
-    localStorage.setItem('love_freq_test_count', c.toString());
-    updateTestCount();
-}
-function updateTestCount() {
-    const el = document.getElementById('test-count');
-    const trustEl = document.getElementById('trust-count');
-    const c = getTestCount();
-    if (c > 0) {
-        el.textContent = `${c.toLocaleString()}${i18n?.t('premium.participantsCount') || 'people have participated!'}`;
-        const trustNum = Math.max(50000, 50000 + Math.floor(c / 10));
-        if (trustEl) trustEl.textContent = trustNum.toLocaleString() + '+';
-    }
-}
-updateTestCount();
+// Social proof counters removed for E-E-A-T compliance
 
 // Start
 document.getElementById('btn-start').addEventListener('click', () => {
@@ -241,7 +246,7 @@ function showResult() {
     // Auto-start wave visualization (visual only, no audio)
     startWaveVisualization();
 
-    incrementTestCount();
+    
     if (typeof gtag === 'function') gtag('event', 'test_complete', { event_category: 'love_frequency', event_label: resultData.name, value: resultData.freq });
 }
 

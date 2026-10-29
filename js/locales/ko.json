@@ -91,9 +91,9 @@
   "related": {
     "title": "더 많은 콘텐츠",
     "nameMatch": "이름 궁합",
-    "zodiacMatch": "별자리 궁합",
     "loveLanguage": "사랑의 언어",
-    "attachmentStyle": "애착유형"
+    "attachmentStyle": "애착유형",
+    "mbtiLove": "MBTI 연애궁합"
   },
   "engage": {
     "cta": "나의 사랑 주파수 찾기",

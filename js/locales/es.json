@@ -86,9 +86,9 @@
   "related": {
     "title": "Explora más",
     "nameMatch": "Compatibilidad de nombres",
-    "zodiacMatch": "Compatibilidad zodiacal",
     "loveLanguage": "Lenguaje del amor",
-    "attachmentStyle": "Estilo de apego"
+    "attachmentStyle": "Estilo de apego",
+    "mbtiLove": "Compatibilidad MBTI"
   },
   "engage": {
     "cta": "Encuentra tu frecuencia de amor",

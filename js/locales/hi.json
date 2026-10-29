@@ -86,9 +86,9 @@
   "related": {
     "title": "और खोजें",
     "nameMatch": "नाम मिलान",
-    "zodiacMatch": "राशि मिलान",
     "loveLanguage": "प्रेम भाषा",
-    "attachmentStyle": "लगाव शैली"
+    "attachmentStyle": "लगाव शैली",
+    "mbtiLove": "MBTI लव मैच"
   },
   "engage": {
     "cta": "अपनी प्रेम आवृत्ति खोजें",

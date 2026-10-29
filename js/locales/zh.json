@@ -86,9 +86,9 @@
   "related": {
     "title": "探索更多",
     "nameMatch": "姓名配对",
-    "zodiacMatch": "星座配对",
     "loveLanguage": "爱的语言",
-    "attachmentStyle": "依恋类型"
+    "attachmentStyle": "依恋类型",
+    "mbtiLove": "MBTI 恋爱契合度"
   },
   "engage": {
     "cta": "找到你的爱情频率",
