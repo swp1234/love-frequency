@@ -401,33 +401,9 @@ function stopWaveVisualization() {
     }
 }
 
-// Premium
+// Premium (광고 강제 잠금 해제 금지 - 즉시 심층 분석 표시)
 document.getElementById('btn-premium').addEventListener('click', () => {
-    if (adCountdownTimer) { clearInterval(adCountdownTimer); adCountdownTimer = null; }
-
-    adOverlay.classList.add('active');
-    let countdown = 5;
-    const countEl = document.getElementById('ad-countdown');
-    const closeBtn = document.getElementById('ad-close');
-    if (countEl) countEl.textContent = countdown;
-    if (closeBtn) closeBtn.style.display = 'none';
-
-    adCountdownTimer = setInterval(() => {
-        countdown--;
-        if (countEl) countEl.textContent = countdown;
-        if (countdown <= 0) {
-            clearInterval(adCountdownTimer);
-            adCountdownTimer = null;
-            if (closeBtn) closeBtn.style.display = 'block';
-        }
-    }, 1000);
-
     if (typeof gtag === 'function') gtag('event', 'premium_click', { event_category: 'love_frequency' });
-});
-
-document.getElementById('ad-close').addEventListener('click', () => {
-    if (adCountdownTimer) { clearInterval(adCountdownTimer); adCountdownTimer = null; }
-    adOverlay.classList.remove('active');
     displayPremiumContent();
 });
 
@@ -614,3 +590,34 @@ if (themeToggle) {
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(() => {});
 }
+
+// Funnel bridge & language preservation
+function initRelatedFunnels() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const lang = urlParams.get('lang') || (window.i18n ? window.i18n.currentLang : 'ko') || 'ko';
+    const base = (window.location.origin && window.location.origin !== 'null') ? window.location.origin : 'https://dopabrain.com';
+    document.querySelectorAll('.related-grid a').forEach(link => {
+        const href = link.getAttribute('href');
+        if (!href || href.startsWith('http') || href.startsWith('#')) return;
+        try {
+            const url = new URL(href, base);
+            url.searchParams.set('lang', lang);
+            if (!url.searchParams.has('source')) url.searchParams.set('source', 'love_frequency_result');
+            link.setAttribute('href', url.pathname + url.search);
+        } catch(e) {}
+        if (!link.dataset.trackedCta) {
+            link.dataset.trackedCta = 'true';
+            link.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'content_cta_click', {
+                        cta_surface: 'love_frequency_related',
+                        destination: link.getAttribute('href'),
+                        source: 'love_frequency',
+                        lang: lang
+                    });
+                }
+            });
+        }
+    });
+}
+initRelatedFunnels();
