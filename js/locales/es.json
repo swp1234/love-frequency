@@ -92,23 +92,32 @@
   },
   "engage": {
     "cta": "Encuentra tu frecuencia de amor",
-    "proof": "corazones han sido sintonizados",
+    "proof": "7 Frecuencias Solfeggio · Reflexión 100% Privada",
     "result1": "528 Hz -- La Frecuencia del Amor",
     "result2": "639 Hz -- Conexión y Armonía",
     "result3": "741 Hz -- Despertar y Expresión",
     "result4": "396 Hz -- Liberación y Coraje"
   },
   "about": {
-    "whatIsTitle": "Que es el test de frecuencia del amor?",
-    "whatIsDesc": "El test de frecuencia del amor revela tu vibracion romantica unica basada en frecuencias solfeggio. Responde 10 preguntas sobre tu enfoque del amor para descubrir cual de las 7 frecuencias solfeggio coincide con tu energia amorosa.",
-    "whatIs1": "7 frecuencias solfeggio que representan diferentes estilos de amor",
-    "whatIs2": "10 preguntas sobre preferencias romanticas y estilo emocional",
-    "whatIs3": "Reproduccion musical para escuchar tu frecuencia de amor real",
-    "frequenciesTitle": "Entendiendo las frecuencias del amor",
-    "frequenciesDesc": "Las frecuencias solfeggio son vibraciones sonoras antiguas que promueven la sanacion y el crecimiento espiritual. La famosa 528Hz es conocida como la frecuencia del amor, asociada con la sanacion y los vinculos emocionales profundos.",
-    "freq1": "396Hz: Amor estable, seguridad, confianza",
-    "freq2": "528Hz: La frecuencia del amor, sanacion, vinculos profundos",
-    "freq3": "639Hz: Amor armonioso, conexion, equilibrio",
-    "freq4": "963Hz: Amor espiritual, conexion del alma, trascendencia"
+    "whatIsTitle": "Acerca del Test de Frecuencia de Amor y Psicoacústica",
+    "whatIsDesc": "El test de frecuencia de amor revela tu vibración afectiva personal mediante la escala Solfeggio. A través de 10 preguntas reflexivas sobre el apego y la comunicación, descubre cuál de las 7 frecuencias se alinea con tu estilo y escucha tu tono en tiempo real.",
+    "frequenciesTitle": "Comprendiendo las Frecuencias Solfeggio",
+    "frequenciesDesc": "En psicoacústica, los tonos puros armónicos facilitan la relajación parasimpática y la regulación del estrés, sirviendo como una metáfora enriquecedora para comprender los vínculos afectivos.",
+    "freq1": "396Hz: Amor enraizado, seguridad y confianza básica",
+    "freq2": "528Hz: La frecuencia del amor, sanación emocional y unión",
+    "freq3": "639Hz: Conexión armónica, empatía y balance mutuo",
+    "freq4": "963Hz: Trascendencia espiritual, resonancia del alma",
+    "faqTitle": "Preguntas Frecuentes (FAQ)",
+    "faq1Q": "¿Cuál es la base de la Frecuencia 528Hz?",
+    "faq1A": "528Hz es una de las frecuencias Solfeggio más populares. Estudios de psicoacústica destacan el efecto calmante de los tonos puros en el sistema nervioso autónomo.",
+    "faq2Q": "¿Reemplaza este test la terapia de pareja profesional?",
+    "faq2A": "No. Es una herramienta reflexiva y recreativa diseñada para fomentar el autoconocimiento y el diálogo afectivo.",
+    "faq3Q": "¿Se guardan mis respuestas o el audio reproducido en la nube?",
+    "faq3A": "Nunca. La síntesis de sonido Web Audio API y el análisis se procesan 100% de forma local en tu navegador.",
+    "reviewDate": "Revisión Editorial: Noviembre 2026",
+    "reviewTeam": "DopaBrain Serie de Psicoacústica y Psicología Relacional"
+  },
+  "game": {
+    "back": "Inicio DopaBrain"
   }
 }

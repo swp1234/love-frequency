@@ -7,7 +7,7 @@
     <meta name="robots" content="max-image-preview:large">
     <title>Love Frequency Test - Free Romance Quiz | DopaBrain</title>
     <meta name="description" content="Discover your love frequency with 10 soulful questions! Find which of 7 solfeggio frequencies matches your romance style. Play the music. Try free!">
-    <meta name="dateModified" content="2026-10-29">
+    <meta name="dateModified" content="2026-11-07">
     <meta name="keywords" content="사랑 주파수, 연애 테스트, 솔페지오 주파수, 528Hz, 사랑 테스트, 연애 유형, 커플 궁합, 심리테스트, 주파수 음악, 진동수">
     <meta name="theme-color" content="#e91e63">
     <link rel="canonical" href="https://dopabrain.com/love-frequency/">
@@ -102,6 +102,39 @@
 
     <!-- i18n -->
     <script src="js/i18n.js"></script>
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the scientific and historical basis of the 528 Hz Love Frequency?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "528 Hz is part of the solfeggio frequency system, historically linked to Gregorian chants and modernized in vibroacoustic and psychoacoustic studies. Research indicates that low-distortion pure harmonic tones can stimulate parasympathetic nervous activity, lower stress hormones (cortisol), and foster deep emotional calm."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is the Love Frequency Test a substitute for relationship counseling or medical diagnosis?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. The test combines musical psychoacoustic metaphors with self-reflection questions on relationship preferences (communication, trust, expression). It serves as an introspective tool for self-awareness and couple discussion, not a clinical diagnostic or therapeutic instrument."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are my quiz responses, tone preferences, or results stored on external servers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Never. The quiz logic and tone generation via the HTML5 Web Audio API execute 100% locally in your web browser. None of your answers or results are transmitted, recorded, or shared."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <a href="#intro-screen" class="skip-link" data-i18n="app.skipLink">본문으로 이동</a>
@@ -164,10 +197,9 @@
             </div>
         </div>
 
-        <!-- Social Proof Badge (upgraded) -->
+        <!-- Social Proof Badge (sanitized) -->
         <div class="social-proof-badge" style="display:flex;justify-content:center;">
-            <span class="badge-count">72,000+</span>
-            <span class="badge-label" data-i18n="engage.proof">hearts have been tuned</span>
+            <span class="badge-label" data-i18n="engage.proof">7 Solfeggio Frequencies · 100% Private Reflection</span>
         </div>
 
         <button id="btn-start" class="btn-start" data-i18n="engage.cta">Find Your Love Frequency</button>
@@ -264,26 +296,37 @@
     <!-- About Section (SEO) -->
     <section style="max-width:420px;margin:24px auto;padding:0 16px;" id="about-love-frequency">
         <details style="background:rgba(233,30,99,0.08);border:1px solid rgba(233,30,99,0.2);border-radius:12px;margin-bottom:12px;overflow:hidden;">
-            <summary style="padding:16px 20px;cursor:pointer;font-weight:700;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center;" data-i18n="about.whatIsTitle">What Is the Love Frequency Test?</summary>
-            <div style="padding:0 20px 16px;font-size:14px;line-height:1.7;opacity:0.8;">
+            <summary style="min-height:48px;padding:14px 18px;cursor:pointer;font-weight:700;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center;" data-i18n="about.whatIsTitle">What Is the Love Frequency Test & Psychoacoustics?</summary>
+            <div style="padding:0 18px 16px;font-size:14px;line-height:1.7;opacity:0.85;">
                 <p data-i18n="about.whatIsDesc">The love frequency test reveals your unique romantic vibration based on solfeggio frequencies. Answer 10 questions about your approach to love and relationships to discover which of 7 solfeggio frequencies matches your love energy. Each frequency carries a distinct meaning, from grounding love (396Hz) to spiritual connection (963Hz). Listen to your frequency and explore compatibility.</p>
-                <ul style="margin-top:8px;padding-left:20px;">
-                    <li data-i18n="about.whatIs1">7 solfeggio frequencies representing different love styles</li>
-                    <li data-i18n="about.whatIs2">10 questions about your romantic preferences and emotional style</li>
-                    <li data-i18n="about.whatIs3">Music playback to hear your actual love frequency</li>
+                <h3 data-i18n="about.frequenciesTitle" style="font-size:15px;color:#ff6b8b;margin:16px 0 8px;">Understanding Solfeggio Love Frequencies</h3>
+                <p data-i18n="about.frequenciesDesc">Solfeggio frequencies are ancient sound vibrations believed to promote healing and relaxation. In psychoacoustics, pure harmonic tones stimulate parasympathetic nervous calm and heart rate coherence, serving as an educational metaphor for relational styles.</p>
+                <ul style="margin:8px 0 16px;padding-left:20px;">
+                    <li data-i18n="about.freq1">396Hz: Grounding love, security, emotional safety</li>
+                    <li data-i18n="about.freq2">528Hz: The love frequency, cellular harmony, deep bonds</li>
+                    <li data-i18n="about.freq3">639Hz: Harmonious connection, interpersonal balance</li>
+                    <li data-i18n="about.freq4">963Hz: Transcendent love, spiritual awakening, soul resonance</li>
                 </ul>
-            </div>
-        </details>
-        <details style="background:rgba(233,30,99,0.08);border:1px solid rgba(233,30,99,0.2);border-radius:12px;overflow:hidden;">
-            <summary style="padding:16px 20px;cursor:pointer;font-weight:700;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center;" data-i18n="about.frequenciesTitle">Understanding Love Frequencies</summary>
-            <div style="padding:0 20px 16px;font-size:14px;line-height:1.7;opacity:0.8;">
-                <p data-i18n="about.frequenciesDesc">Solfeggio frequencies are ancient sound vibrations believed to promote healing and spiritual growth. In the context of love, each frequency resonates with a different aspect of romantic connection. The famous 528Hz is known as the love frequency, associated with healing and deep emotional bonds. Your result reflects your dominant love energy pattern.</p>
-                <ul style="margin-top:8px;padding-left:20px;">
-                    <li data-i18n="about.freq1">396Hz: Grounding love, security, trust</li>
-                    <li data-i18n="about.freq2">528Hz: The love frequency, healing, deep bonds</li>
-                    <li data-i18n="about.freq3">639Hz: Harmonious love, connection, balance</li>
-                    <li data-i18n="about.freq4">963Hz: Spiritual love, soul connection, transcendence</li>
-                </ul>
+
+                <h3 data-i18n="about.faqTitle" style="font-size:15px;color:#ff6b8b;margin:18px 0 10px;">Frequently Asked Questions</h3>
+                <div class="faq-list" style="display:flex;flex-direction:column;gap:10px;">
+                    <div class="faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:12px 14px;">
+                        <h4 data-i18n="about.faq1Q" style="font-size:13px;font-weight:600;color:#fff;margin:0 0 6px;">Q: What is the scientific basis of the 528 Hz Love Frequency?</h4>
+                        <p data-i18n="about.faq1A" style="font-size:12px;line-height:1.6;margin:0;color:#cbd5e1;">A: 528 Hz is part of the solfeggio frequency system, historically linked to Gregorian chants and modernized in vibroacoustic and psychoacoustic studies. Research indicates that low-distortion pure harmonic tones can stimulate parasympathetic nervous activity, lower stress hormones (cortisol), and foster deep emotional calm.</p>
+                    </div>
+                    <div class="faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:12px 14px;">
+                        <h4 data-i18n="about.faq2Q" style="font-size:13px;font-weight:600;color:#fff;margin:0 0 6px;">Q: Is this test a substitute for relationship therapy?</h4>
+                        <p data-i18n="about.faq2A" style="font-size:12px;line-height:1.6;margin:0;color:#cbd5e1;">A: No. The test combines musical psychoacoustic metaphors with self-reflection questions on relationship preferences (communication, trust, expression). It serves as an introspective tool for self-awareness and couple discussion, not a clinical diagnostic or therapeutic instrument.</p>
+                    </div>
+                    <div class="faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:12px 14px;">
+                        <h4 data-i18n="about.faq3Q" style="font-size:13px;font-weight:600;color:#fff;margin:0 0 6px;">Q: Are my quiz responses or results stored on external servers?</h4>
+                        <p data-i18n="about.faq3A" style="font-size:12px;line-height:1.6;margin:0;color:#cbd5e1;">A: Never. The quiz logic and tone generation via the HTML5 Web Audio API execute 100% locally in your web browser. None of your answers or results are transmitted, recorded, or shared.</p>
+                    </div>
+                </div>
+
+                <div class="about-review-meta" style="font-size:11px;color:#a0a0b8;margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.1);opacity:0.8;">
+                    <span data-i18n="about.reviewDate">Editorial Review: November 2026</span> • <span data-i18n="about.reviewTeam">DopaBrain Psychoacoustics & Relational Psychology Series</span>
+                </div>
             </div>
         </details>
     </section>

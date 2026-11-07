@@ -92,23 +92,32 @@
   },
   "engage": {
     "cta": "Temukan frekuensi cintamu",
-    "proof": "hati telah disetel",
+    "proof": "7 Frekuensi Solfeggio · Refleksi 100% Privat",
     "result1": "528 Hz -- Frekuensi Cinta",
     "result2": "639 Hz -- Koneksi & Harmoni",
     "result3": "741 Hz -- Kebangkitan & Ekspresi",
     "result4": "396 Hz -- Pembebasan & Keberanian"
   },
   "about": {
-    "whatIsTitle": "Apa itu Tes Frekuensi Cinta?",
-    "whatIsDesc": "Tes frekuensi cinta mengungkap getaran romantis unik Anda berdasarkan frekuensi solfeggio. Jawab 10 pertanyaan tentang pendekatan Anda terhadap cinta untuk menemukan frekuensi solfeggio yang cocok dengan energi cinta Anda.",
-    "whatIs1": "7 frekuensi solfeggio mewakili gaya cinta yang berbeda",
-    "whatIs2": "10 pertanyaan tentang preferensi romantis dan gaya emosional",
-    "whatIs3": "Pemutaran musik untuk mendengar frekuensi cinta Anda",
-    "frequenciesTitle": "Memahami Frekuensi Cinta",
-    "frequenciesDesc": "Frekuensi solfeggio adalah getaran suara kuno yang diyakini mendorong penyembuhan dan pertumbuhan spiritual. 528Hz yang terkenal dikenal sebagai frekuensi cinta, terkait dengan penyembuhan dan ikatan emosional mendalam.",
-    "freq1": "396Hz: Cinta yang membumi, keamanan, kepercayaan",
-    "freq2": "528Hz: Frekuensi cinta, penyembuhan, ikatan mendalam",
-    "freq3": "639Hz: Cinta harmonis, koneksi, keseimbangan",
-    "freq4": "963Hz: Cinta spiritual, koneksi jiwa, transendensi"
+    "whatIsTitle": "Tentang Tes Frekuensi Cinta & Psikoakustik",
+    "whatIsDesc": "Tes frekuensi cinta mengungkapkan getaran romantis unik Anda melalui skala solfeggio. Lewat 10 pertanyaan relasional, temukan frekuensi yang beresonansi dengan Anda dan dengarkan suaranya langsung.",
+    "frequenciesTitle": "Memahami Frekuensi Solfeggio Cinta",
+    "frequenciesDesc": "Secara psikoakustik, nada murni membantu menenangkan sistem saraf dan menyeimbangkan detak jantung, menjadi sarana refleksi gaya kelekatan Anda.",
+    "freq1": "396Hz: Cinta yang membumi, rasa aman dan kepercayaan",
+    "freq2": "528Hz: Frekuensi cinta, penyembuhan batin, ikatan mendalam",
+    "freq3": "639Hz: Keharmonisan hubungan, empati, dan komunikasi hangat",
+    "freq4": "963Hz: Koneksi spiritual, resonansi jiwa dan ketulusan",
+    "faqTitle": "Pertanyaan yang Sering Diajukan (FAQ)",
+    "faq1Q": "Apa dasar ilmiah dari frekuensi cinta 528Hz?",
+    "faq1A": "528Hz adalah frekuensi solfeggio yang dikenal dalam terapi suara untuk menurunkan hormon stres dan menstimulasi respons relaksasi parasimpatis.",
+    "faq2Q": "Apakah tes ini menggantikan konseling pasangan?",
+    "faq2A": "Tidak. Ini adalah sarana refleksi diri dan stimulasi percakapan intim, bukan diagnosis klinis.",
+    "faq3Q": "Apakah data kuis saya disimpan di server eksternal?",
+    "faq3A": "Sama sekali tidak. Sintesis suara Web Audio API berjalan 100% lokal di browser Anda.",
+    "reviewDate": "Tinjauan Editorial: November 2026",
+    "reviewTeam": "DopaBrain Psikoakustik & Psikologi Hubungan"
+  },
+  "game": {
+    "back": "Beranda DopaBrain"
   }
 }

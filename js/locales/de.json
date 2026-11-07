@@ -92,23 +92,32 @@
   },
   "engage": {
     "cta": "Finde deine Liebesfrequenz",
-    "proof": "Herzen wurden gestimmt",
+    "proof": "7 Solfeggio-Frequenzen · 100 % private Selbstreflexion",
     "result1": "528 Hz -- Die Liebesfrequenz",
     "result2": "639 Hz -- Verbindung & Harmonie",
     "result3": "741 Hz -- Erwachen & Ausdruck",
     "result4": "396 Hz -- Befreiung & Mut"
   },
   "about": {
-    "whatIsTitle": "Was ist der Liebesfrequenz-Test?",
-    "whatIsDesc": "Der Liebesfrequenz-Test enthuellt Ihre einzigartige romantische Schwingung basierend auf Solfeggio-Frequenzen. Beantworten Sie 10 Fragen ueber Ihre Herangehensweise an die Liebe, um herauszufinden, welche der 7 Solfeggio-Frequenzen zu Ihrer Liebesenergie passt.",
-    "whatIs1": "7 Solfeggio-Frequenzen fuer verschiedene Liebesstile",
-    "whatIs2": "10 Fragen zu romantischen Vorlieben und emotionalem Stil",
-    "whatIs3": "Musikwiedergabe zum Anhoeren Ihrer Liebesfrequenz",
-    "frequenciesTitle": "Liebesfrequenzen verstehen",
-    "frequenciesDesc": "Solfeggio-Frequenzen sind uralte Klangschwingungen, die Heilung und spirituelles Wachstum foerdern. Die beruehmte 528Hz ist als Liebesfrequenz bekannt, verbunden mit Heilung und tiefen emotionalen Bindungen.",
-    "freq1": "396Hz: Erdende Liebe, Sicherheit, Vertrauen",
-    "freq2": "528Hz: Die Liebesfrequenz, Heilung, tiefe Bindungen",
-    "freq3": "639Hz: Harmonische Liebe, Verbindung, Balance",
-    "freq4": "963Hz: Spirituelle Liebe, Seelenverbindung, Transzendenz"
+    "whatIsTitle": "Über den Liebesfrequenz-Test & Psychoakustik",
+    "whatIsDesc": "Der Liebesfrequenz-Test bestimmt Ihre persönliche Beziehungsschwingung auf Basis der Solfeggio-Frequenzen. 10 Fragen beleuchten Ihren romantischen Stil und verbinden ihn mit einem von 7 harmonischen Tönen (396Hz bis 963Hz), die Sie direkt im Browser anhören können.",
+    "frequenciesTitle": "Bedeutung der Solfeggio-Liebesfrequenzen",
+    "frequenciesDesc": "Reine harmonische Töne unterstützen in der Psychoakustik die parasympathische Entspannung. Als Metapher regen sie an, Beziehungsmuster und emotionale Bedürfnisse achtsam zu reflektieren.",
+    "freq1": "396Hz: Geerdete Liebe, emotionale Sicherheit, Urvertrauen",
+    "freq2": "528Hz: Die Liebesfrequenz, Zellharmonie, tiefe Bindung",
+    "freq3": "639Hz: Harmonische Verbindung, soziale Empathie, Balance",
+    "freq4": "963Hz: Spirituelle Verbundenheit, Seelenresonanz",
+    "faqTitle": "Häufig gestellte Fragen (FAQ)",
+    "faq1Q": "Was ist der Hintergrund der 528-Hz-Liebesfrequenz?",
+    "faq1A": "528 Hz ist Teil der historischen Solfeggio-Tonleiter. In der Klangtherapie wird ihr eine beruhigende Wirkung auf das vegetative Nervensystem zugeschrieben.",
+    "faq2Q": "Ersetzt dieser Test eine Paartherapie?",
+    "faq2A": "Nein. Es handelt sich um ein achtsames Selbsterfahrungsangebot, nicht um eine klinische Diagnostik.",
+    "faq3Q": "Werden meine Antworten oder Klangeinstellungen gespeichert?",
+    "faq3A": "Niemals. Tonerzeugung (Web Audio API) und Auswertung erfolgen zu 100 % lokal in Ihrem Browser.",
+    "reviewDate": "Redaktionelle Prüfung: November 2026",
+    "reviewTeam": "DopaBrain Psychoakustik & Beziehungspsychologie"
+  },
+  "game": {
+    "back": "DopaBrain Startseite"
   }
 }

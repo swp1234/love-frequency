@@ -97,23 +97,32 @@
   },
   "engage": {
     "cta": "Find Your Love Frequency",
-    "proof": "hearts have been tuned",
+    "proof": "7 Solfeggio Frequencies · 100% Private Reflection",
     "result1": "528 Hz -- The Love Frequency",
     "result2": "639 Hz -- Connection & Harmony",
     "result3": "741 Hz -- Awakening & Expression",
     "result4": "396 Hz -- Liberation & Courage"
   },
   "about": {
-    "whatIsTitle": "What Is the Love Frequency Test?",
+    "whatIsTitle": "What Is the Love Frequency Test & Psychoacoustics?",
     "whatIsDesc": "The love frequency test reveals your unique romantic vibration based on solfeggio frequencies. Answer 10 questions about your approach to love and relationships to discover which of 7 solfeggio frequencies matches your love energy. Each frequency carries a distinct meaning, from grounding love (396Hz) to spiritual connection (963Hz). Listen to your frequency and explore compatibility.",
-    "whatIs1": "7 solfeggio frequencies representing different love styles",
-    "whatIs2": "10 questions about your romantic preferences and emotional style",
-    "whatIs3": "Music playback to hear your actual love frequency",
-    "frequenciesTitle": "Understanding Love Frequencies",
-    "frequenciesDesc": "Solfeggio frequencies are ancient sound vibrations believed to promote healing and spiritual growth. In the context of love, each frequency resonates with a different aspect of romantic connection. The famous 528Hz is known as the love frequency, associated with healing and deep emotional bonds.",
-    "freq1": "396Hz: Grounding love, security, trust",
-    "freq2": "528Hz: The love frequency, healing, deep bonds",
-    "freq3": "639Hz: Harmonious love, connection, balance",
-    "freq4": "963Hz: Spiritual love, soul connection, transcendence"
+    "frequenciesTitle": "Understanding Solfeggio Love Frequencies",
+    "frequenciesDesc": "Solfeggio frequencies are ancient sound vibrations believed to promote healing and relaxation. In psychoacoustics, pure harmonic tones stimulate parasympathetic nervous calm and heart rate coherence, serving as an educational metaphor for relational styles.",
+    "freq1": "396Hz: Grounding love, security, emotional safety",
+    "freq2": "528Hz: The love frequency, cellular harmony, deep bonds",
+    "freq3": "639Hz: Harmonious connection, interpersonal balance",
+    "freq4": "963Hz: Transcendent love, spiritual awakening, soul resonance",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Q": "What is the scientific basis of the 528 Hz Love Frequency?",
+    "faq1A": "528 Hz is part of the solfeggio frequency system, historically linked to Gregorian chants and modernized in vibroacoustic and psychoacoustic studies. Research indicates that low-distortion pure harmonic tones can stimulate parasympathetic nervous activity, lower stress hormones (cortisol), and foster deep emotional calm.",
+    "faq2Q": "Is this test a substitute for relationship therapy?",
+    "faq2A": "No. The test combines musical psychoacoustic metaphors with self-reflection questions on relationship preferences (communication, trust, expression). It serves as an introspective tool for self-awareness and couple discussion, not a clinical diagnostic or therapeutic instrument.",
+    "faq3Q": "Are my quiz responses or results stored on external servers?",
+    "faq3A": "Never. The quiz logic and tone generation via the HTML5 Web Audio API execute 100% locally in your web browser. None of your answers or results are transmitted, recorded, or shared.",
+    "reviewDate": "Editorial Review: November 2026",
+    "reviewTeam": "DopaBrain Psychoacoustics & Relational Psychology Series"
+  },
+  "game": {
+    "back": "DopaBrain Home"
   }
 }

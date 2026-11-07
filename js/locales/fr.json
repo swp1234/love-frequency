@@ -92,23 +92,32 @@
   },
   "engage": {
     "cta": "Trouvez votre fréquence d'amour",
-    "proof": "coeurs ont été accordés",
+    "proof": "7 Fréquences Solfeggio · Réflexion 100% Privée",
     "result1": "528 Hz -- La Fréquence de l'Amour",
     "result2": "639 Hz -- Connexion et Harmonie",
     "result3": "741 Hz -- Éveil et Expression",
     "result4": "396 Hz -- Libération et Courage"
   },
   "about": {
-    "whatIsTitle": "Qu'est-ce que le test de fréquence d'amour ?",
-    "whatIsDesc": "Le test de fréquence d'amour révèle votre vibration romantique unique basée sur les fréquences solfège. Répondez à 10 questions sur votre approche de l'amour pour découvrir laquelle des 7 fréquences solfège correspond à votre énergie amoureuse.",
-    "whatIs1": "7 fréquences solfège représentant différents styles d'amour",
-    "whatIs2": "10 questions sur les préférences romantiques et le style émotionnel",
-    "whatIs3": "Lecture musicale pour écouter votre fréquence d'amour réelle",
-    "frequenciesTitle": "Comprendre les fréquences d'amour",
-    "frequenciesDesc": "Les fréquences solfège sont d'anciennes vibrations sonores censées favoriser la guérison et la croissance spirituelle. La célèbre 528Hz est connue comme la fréquence de l'amour, associée à la guérison et aux liens émotionnels profonds.",
-    "freq1": "396Hz : Amour ancré, sécurité, confiance",
-    "freq2": "528Hz : La fréquence de l'amour, guérison, liens profonds",
-    "freq3": "639Hz : Amour harmonieux, connexion, équilibre",
-    "freq4": "963Hz : Amour spirituel, connexion d'âme, transcendance"
+    "whatIsTitle": "À propos du Test de Fréquence d'Amour & Psychoacoustique",
+    "whatIsDesc": "Ce test explore votre vibration amoureuse à travers les fréquences sacrées du Solfeggio. 10 questions sur votre sensibilité affective déterminent votre résonance parmi 7 tonalités (396Hz à 963Hz) avec écoute audio instantanée.",
+    "frequenciesTitle": "Comprendre les Fréquences d'Amour",
+    "frequenciesDesc": "En psychoacoustique, les sons purs harmoniques stimulent le système parasympathique et l'apaisement intérieur. Ils offrent une métaphore bienveillante pour explorer son style relationnel.",
+    "freq1": "396Hz: Amour ancré, sécurité et stabilité affective",
+    "freq2": "528Hz: Fréquence du miracle, guérison des blessures, lien profond",
+    "freq3": "639Hz: Harmonie relationnelle, écoute mutuelle et équilibre",
+    "freq4": "963Hz: Connexion spirituelle, communion des âmes",
+    "faqTitle": "Foire Aux Questions (FAQ)",
+    "faq1Q": "Quelle est l'origine de la fréquence 528 Hz ?",
+    "faq1A": "Issue des hymnes médiévaux grégoriens, la fréquence 528 Hz est aujourd'hui étudiée en thérapie sonore pour favoriser la réduction du stress et l'harmonie intérieure.",
+    "faq2Q": "Ce test remplace-t-il une thérapie de couple ?",
+    "faq2A": "En aucun cas. C'est un support introspectif ludique pour nourrir la complicité et la conscience de soi.",
+    "faq3Q": "Mes réponses sont-elles enregistrées ?",
+    "faq3A": "Jamais. La synthèse sonore Web Audio API et le calcul opèrent à 100% en local sur votre appareil.",
+    "reviewDate": "Revue Éditoriale : Novembre 2026",
+    "reviewTeam": "DopaBrain Psychoacoustique & Psychologie Relationnelle"
+  },
+  "game": {
+    "back": "Accueil DopaBrain"
   }
 }
