@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "Test de Fréquence d'Amour - Quelle est ta Fréquence d'Amour en Hz? 💕",
-    "description": "Découvre ta fréquence d'amour à travers 10 questions! Laquelle des 7 fréquences Solfège correspond à ton style d'amour? Lecture de musique de fréquence et analyse de compatibilité incluses."
+    "description": "Découvre ta fréquence d'amour à travers 10 questions! Laquelle des 7 fréquences Solfège correspond à ton style d'amour? Lecture de musique de fréquence et analyse de compatibilité incluses.",
+    "skipLink": "Aller au contenu principal",
+    "loading": "Chargement..."
   },
   "intro": {
     "title": "Test de Fréquence d'Amour",
@@ -88,7 +90,10 @@
     "nameMatch": "Compatibilité des prénoms",
     "loveLanguage": "Langage amoureux",
     "attachmentStyle": "Style d'attachement",
-    "mbtiLove": "Compatibilité MBTI"
+    "mbtiLove": "Compatibilité MBTI",
+    "toxicTrait": "Trait Toxique",
+    "futureSelf": "Moi Futur",
+    "stressCheck": "Bilan de Stress"
   },
   "engage": {
     "cta": "Trouvez votre fréquence d'amour",

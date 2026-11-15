@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "Tes Frekuensi Cinta - Berapa Frekuensi Cinta Anda dalam Hz? 💕",
-    "description": "Temukan frekuensi cinta Anda melalui 10 pertanyaan! Manakah dari 7 frekuensi Solfeggio yang cocok dengan gaya cinta Anda? Putar musik frekuensi dan analisis kompatibilitas disertakan."
+    "description": "Temukan frekuensi cinta Anda melalui 10 pertanyaan! Manakah dari 7 frekuensi Solfeggio yang cocok dengan gaya cinta Anda? Putar musik frekuensi dan analisis kompatibilitas disertakan.",
+    "skipLink": "Lewati ke konten utama",
+    "loading": "Memuat..."
   },
   "intro": {
     "title": "Tes Frekuensi Cinta",
@@ -88,7 +90,10 @@
     "nameMatch": "Kecocokan nama",
     "loveLanguage": "Bahasa cinta",
     "attachmentStyle": "Gaya kelekatan",
-    "mbtiLove": "Kecocokan MBTI"
+    "mbtiLove": "Kecocokan MBTI",
+    "toxicTrait": "Sifat Toksik",
+    "futureSelf": "Diri Masa Depan",
+    "stressCheck": "Cek Stres"
   },
   "engage": {
     "cta": "Temukan frekuensi cintamu",

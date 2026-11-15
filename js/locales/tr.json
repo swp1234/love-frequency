@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "Aşk Frekansı Testi - Aşk Frekansın Hz Cinsinden Nedir? 💕",
-    "description": "10 soruda aşk frekansını keşfet! Hangi 7 Solfeggio frekansı senin aşk stiline uyuyor? Frekans müziği dinle ve uyumluluk analizi dahil."
+    "description": "10 soruda aşk frekansını keşfet! Hangi 7 Solfeggio frekansı senin aşk stiline uyuyor? Frekans müziği dinle ve uyumluluk analizi dahil.",
+    "skipLink": "Ana içeriğe geç",
+    "loading": "Yükleniyor..."
   },
   "intro": {
     "title": "Aşk Frekansı Testi",
@@ -88,7 +90,10 @@
     "nameMatch": "İsim uyumu",
     "loveLanguage": "Aşk dili",
     "attachmentStyle": "Bağlanma tarzı",
-    "mbtiLove": "MBTI Aşk Uyumu"
+    "mbtiLove": "MBTI Aşk Uyumu",
+    "toxicTrait": "Toksik Özellik",
+    "futureSelf": "Gelecekteki Ben",
+    "stressCheck": "Stres Kontrolü"
   },
   "engage": {
     "cta": "Aşk frekansını bul",

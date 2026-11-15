@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "爱频率测试 - 你的爱频率是多少 Hz? 💕",
-    "description": "通过10个问题发现你的爱频率!哪个7种索尔费基奥频率与你的爱情风格相匹配?包括频率音乐播放和兼容性分析。"
+    "description": "通过10个问题发现你的爱频率!哪个7种索尔费基奥频率与你的爱情风格相匹配?包括频率音乐播放和兼容性分析。",
+    "skipLink": "跳至正文",
+    "loading": "加载中..."
   },
   "intro": {
     "title": "爱频率测试",
@@ -88,7 +90,10 @@
     "nameMatch": "姓名配对",
     "loveLanguage": "爱的语言",
     "attachmentStyle": "依恋类型",
-    "mbtiLove": "MBTI 恋爱契合度"
+    "mbtiLove": "MBTI 恋爱契合度",
+    "toxicTrait": "毒舌/暗黑特质测试",
+    "futureSelf": "未来的自己",
+    "stressCheck": "压力检测"
   },
   "engage": {
     "cta": "找到你的爱情频率",

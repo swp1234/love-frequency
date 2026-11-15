@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "Love Frequency Test - あなたのラブフリーケンシーはHz単位で何？ 💕",
-    "description": "10個の質問を通じてあなたのラブフリーケンシーを発見！7つのソルフェジオ周波数のどれがあなたの恋愛スタイルに合う？周波数音楽再生と相性分析を含む。"
+    "description": "10個の質問を通じてあなたのラブフリーケンシーを発見！7つのソルフェジオ周波数のどれがあなたの恋愛スタイルに合う？周波数音楽再生と相性分析を含む。",
+    "skipLink": "メインコンテンツへ移動",
+    "loading": "読み込み中..."
   },
   "intro": {
     "title": "ラブフリーケンシーテスト",
@@ -88,7 +90,10 @@
     "nameMatch": "名前相性",
     "loveLanguage": "愛の言語",
     "attachmentStyle": "愛着タイプ",
-    "mbtiLove": "MBTI 恋愛相性"
+    "mbtiLove": "MBTI 恋愛相性",
+    "toxicTrait": "ダークな癖診断",
+    "futureSelf": "未来の自分",
+    "stressCheck": "ストレスチェック"
   },
   "engage": {
     "cta": "あなたの愛の周波数を見つけよう",

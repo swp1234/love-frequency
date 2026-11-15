@@ -2,7 +2,8 @@
   "app": {
     "title": "Love Frequency Test - What's Your Love Frequency in Hz? 💕",
     "description": "Discover your love frequency through 10 questions! Which of the 7 Solfeggio frequencies matches your love style? Play frequency music and compatibility analysis included.",
-    "skipLink": "Skip to main content"
+    "skipLink": "Skip to main content",
+    "loading": "Loading..."
   },
   "intro": {
     "title": "Love Frequency Test",
@@ -93,7 +94,10 @@
     "nameMatch": "Name Match",
     "loveLanguage": "Love Language",
     "attachmentStyle": "Attachment Style",
-    "mbtiLove": "MBTI Love"
+    "mbtiLove": "MBTI Love",
+    "toxicTrait": "Toxic Trait",
+    "futureSelf": "Future Self",
+    "stressCheck": "Stress Check"
   },
   "engage": {
     "cta": "Find Your Love Frequency",

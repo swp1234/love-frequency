@@ -1,7 +1,9 @@
 {
   "app": {
     "title": "Teste de Frequência do Amor - Qual é sua Frequência do Amor em Hz? 💕",
-    "description": "Descubra sua frequência do amor através de 10 questões! Qual das 7 frequências Solfeggio corresponde ao seu estilo de amor? Música de frequência de jogo e análise de compatibilidade incluídas."
+    "description": "Descubra sua frequência do amor através de 10 questões! Qual das 7 frequências Solfeggio corresponde ao seu estilo de amor? Música de frequência de jogo e análise de compatibilidade incluídas.",
+    "skipLink": "Ir para o conteúdo principal",
+    "loading": "Carregando..."
   },
   "intro": {
     "title": "Teste de Frequência do Amor",
@@ -88,7 +90,10 @@
     "nameMatch": "Compatibilidade de nomes",
     "loveLanguage": "Linguagem do amor",
     "attachmentStyle": "Estilo de apego",
-    "mbtiLove": "Compatibilidade MBTI"
+    "mbtiLove": "Compatibilidade MBTI",
+    "toxicTrait": "Traço Tóxico",
+    "futureSelf": "Eu do Futuro",
+    "stressCheck": "Checagem de Estresse"
   },
   "engage": {
     "cta": "Encontre sua frequência do amor",

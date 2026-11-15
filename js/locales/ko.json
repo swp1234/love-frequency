@@ -2,7 +2,8 @@
   "app": {
     "title": "사랑 주파수 테스트 - 나의 사랑 주파수는 몇 Hz? 💕",
     "description": "10가지 질문으로 알아보는 나의 사랑 주파수! 솔페지오 7가지 주파수 중 당신의 사랑 스타일은? 주파수 음악 재생과 궁합 분석까지.",
-    "skipLink": "본문으로 이동"
+    "skipLink": "본문으로 이동",
+    "loading": "로딩 중..."
   },
   "intro": {
     "title": "사랑 주파수 테스트",
@@ -93,7 +94,10 @@
     "nameMatch": "이름 궁합",
     "loveLanguage": "사랑의 언어",
     "attachmentStyle": "애착유형",
-    "mbtiLove": "MBTI 연애궁합"
+    "mbtiLove": "MBTI 연애궁합",
+    "toxicTrait": "독성 성향 테스트",
+    "futureSelf": "미래의 나",
+    "stressCheck": "스트레스 체크"
   },
   "engage": {
     "cta": "나의 사랑 주파수 찾기",
