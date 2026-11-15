@@ -25,7 +25,7 @@
     "spectrum": "🎵 나의 주파수 스펙트럼",
     "playFreqBtn": "🎧 주파수 듣기",
     "stopFreqBtn": "⏹️ 주파수 멈추기",
-    "premiumBtn": "🔓 AI 심층 궁합 분석 & 커플 루틴 보기",
+    "premiumBtn": "🔓 심층 궁합 분석 & 커플 루틴 보기",
     "shareBtn": "📤 공유",
     "saveImageBtn": "📷 저장",
     "retryBtn": "🔄 다시",
@@ -65,7 +65,7 @@
   },
   "ads": {
     "banner": "광고 영역",
-    "waitMessage": "잠시 후 AI 심층 궁합 분석 결과를 확인할 수 있습니다"
+    "waitMessage": "잠시 후 심층 궁합 분석 결과를 확인할 수 있습니다"
   },
   "recommendations": {
     "mbti": {
@@ -124,5 +124,15 @@
   },
   "game": {
     "back": "DopaBrain 홈"
+  },
+  "curated": {
+    "title": "관계의 주파수를 맞추는 추천 도서",
+    "subtitle": "연인의 애정 표현 방식을 이해하고 깊은 신뢰를 쌓는 검증된 필독서입니다.",
+    "book1Title": "5가지 사랑의 언어 (게리 채프먼)",
+    "book1Desc": "연인과 배우자가 사랑을 느끼고 표현하는 핵심 채널을 짚는 스테디셀러",
+    "book2Title": "우리가 원하는 사랑을 얻기까지 (하빌 헨드릭스)",
+    "book2Desc": "무의식적 애착 패턴을 이해하고 의식적 파트너십으로 나아가는 안내서",
+    "cta": "도서 보기",
+    "disclosure": "이 링크는 Amazon 제휴 링크입니다. 구매 시 운영자에게 소정의 수수료가 지급될 수 있습니다."
   }
 }

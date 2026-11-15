@@ -45,8 +45,10 @@ const adOverlay = document.getElementById('ad-overlay');
 (async function initI18n() {
     try {
         await i18n.loadTranslations(i18n.getCurrentLanguage());
+        document.documentElement.lang = i18n.getCurrentLanguage();
         i18n.updateUI();
         preserveLanguageLinks();
+        initRelatedFunnels();
         const langToggle = document.getElementById('lang-toggle');
         const langMenu = document.getElementById('lang-menu');
         const langOptions = document.querySelectorAll('.lang-option');
@@ -59,6 +61,7 @@ const adOverlay = document.getElementById('ad-overlay');
             opt.addEventListener('click', async () => {
                 await i18n.setLanguage(opt.getAttribute('data-lang'));
                 preserveLanguageLinks();
+                initRelatedFunnels();
                 langOptions.forEach(o => o.classList.remove('active'));
                 opt.classList.add('active');
                 langMenu.classList.add('hidden');
@@ -95,7 +98,7 @@ document.getElementById('btn-start').addEventListener('click', () => {
     allScores = [];
     show(questionScreen);
     showQuestion();
-    if (typeof gtag === 'function') gtag('event', 'test_start', { event_category: 'love_frequency' });
+    if (typeof gtag === 'function') gtag('event', 'test_start', { event_category: 'love_frequency', app_name: 'love-frequency' });
 });
 
 function showQuestion() {
@@ -247,7 +250,7 @@ function showResult() {
     startWaveVisualization();
 
     
-    if (typeof gtag === 'function') gtag('event', 'test_complete', { event_category: 'love_frequency', event_label: resultData.name, value: resultData.freq });
+    if (typeof gtag === 'function') gtag('event', 'test_complete', { event_category: 'love_frequency', app_name: 'love-frequency', result_type: `${resultData.freq}hz` });
 }
 
 function renderSpectrumBars(totals) {
@@ -455,49 +458,66 @@ function displayPremiumContent() {
 }
 
 // Share
+function getLoveFreqShareUrl() {
+    const lang = (window.i18n && window.i18n.currentLang) || (new URLSearchParams(window.location.search).get('lang')) || 'ko';
+    return `https://dopabrain.com/love-frequency/?lang=${encodeURIComponent(lang)}&utm_source=share`;
+}
+
 document.getElementById('btn-share').addEventListener('click', shareResult);
 function shareResult() {
-    const text = (i18n?.t('premium.shareText') || `💕 My Love Frequency: {freq}Hz\n{emoji} {title}\n"{subtitle}"\n\nWhat's your love frequency?\n👉 https://dopabrain.com/love-frequency/\n\n#LoveFrequency #DatingTest #LoveFrequencyTest`)
+    const shareUrl = getLoveFreqShareUrl();
+    const text = (i18n?.t('premium.shareText') || `💕 My Love Frequency: {freq}Hz\n{emoji} {title}\n"{subtitle}"\n\nWhat's your love frequency?\n👉 ${shareUrl}\n\n#LoveFrequency #DatingTest #LoveFrequencyTest`)
         .replace('{freq}', resultData.freq)
         .replace('{emoji}', resultData.emoji)
         .replace('{title}', resultData.title)
-        .replace('{subtitle}', resultData.subtitle);
+        .replace('{subtitle}', resultData.subtitle)
+        .replace(/https:\/\/dopabrain\.com\/love-frequency\/(?:\?[^\s]*)?/g, shareUrl);
     if (navigator.share) {
-        navigator.share({ title: i18n?.t('premium.shareTitle') || 'Love Frequency Test', text, url: 'https://dopabrain.com/love-frequency/' }).catch(() => {});
-    } else {
-        navigator.clipboard.writeText(text).then(() => alert(i18n?.t('result.resultSharedMessage') || 'Result copied!')).catch(() => {});
+        navigator.share({ title: i18n?.t('premium.shareTitle') || 'Love Frequency Test', text, url: shareUrl }).catch(() => {});
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(shareUrl).then(() => showShareToast(i18n?.t('result.resultSharedMessage') || 'Copied!')).catch(() => {});
     }
-    if (typeof gtag === 'function') gtag('event', 'share', { event_category: 'love_frequency' });
+    if (typeof gtag === 'function') gtag('event', 'share', { event_category: 'love_frequency', method: navigator.share ? 'native' : 'copy', content_type: 'quiz_result' });
 }
 
-// Save image
+function showShareToast(msg) {
+    if (typeof alert === 'function' && window.top === window && !navigator.webdriver) {
+        try { alert(msg); return; } catch (e) {}
+    }
+}
+
+// Save Story Card (1080x1920)
 document.getElementById('btn-save-image').addEventListener('click', generateShareImage);
 function generateShareImage() {
+    if (!resultData) return;
     const canvas = document.getElementById('share-canvas');
+    canvas.width = 1080;
+    canvas.height = 1920;
     const ctx = canvas.getContext('2d');
-    const w = 1080, h = 1080;
+    const w = 1080, h = 1920;
 
     // Background gradient
     const grad = ctx.createLinearGradient(0, 0, w, h);
-    grad.addColorStop(0, resultData.colorEnd);
-    grad.addColorStop(1, resultData.color);
+    grad.addColorStop(0, resultData.colorEnd || '#1a0b2e');
+    grad.addColorStop(0.55, '#2d1239');
+    grad.addColorStop(1, resultData.color || '#e91e63');
     ctx.fillStyle = grad;
     ctx.fillRect(0, 0, w, h);
 
-    // Decorative circles
-    ctx.globalAlpha = 0.06;
-    for (let i = 0; i < 10; i++) {
+    // Deterministic harmonic resonance rings
+    ctx.strokeStyle = 'rgba(255,255,255,0.12)';
+    ctx.lineWidth = 3;
+    [240, 360, 480].forEach(r => {
         ctx.beginPath();
-        ctx.arc(w * Math.random(), h * Math.random(), 100 + Math.random() * 200, 0, Math.PI * 2);
-        ctx.fillStyle = '#fff';
-        ctx.fill();
-    }
+        ctx.arc(w / 2, 620, r, 0, Math.PI * 2);
+        ctx.stroke();
+    });
 
-    // Wave pattern at bottom
-    ctx.globalAlpha = 0.1;
+    // Wave pattern near bottom
+    ctx.globalAlpha = 0.12;
     ctx.beginPath();
     for (let x = 0; x < w; x++) {
-        const y = h - 150 + Math.sin(x * 0.02) * 30;
+        const y = h - 220 + Math.sin(x * 0.02) * 34;
         if (x === 0) ctx.moveTo(x, y);
         else ctx.lineTo(x, y);
     }
@@ -508,55 +528,57 @@ function generateShareImage() {
     ctx.globalAlpha = 1;
 
     // Top label
-    ctx.fillStyle = 'rgba(255,255,255,0.7)';
-    ctx.font = '600 32px -apple-system, sans-serif';
+    ctx.fillStyle = 'rgba(255,255,255,0.8)';
+    ctx.font = 'bold 34px sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText(i18n?.t('premium.youLoveFrequency') || 'My Love Frequency is', w / 2, 160);
+    ctx.fillText('DOPABRAIN · LOVE FREQUENCY', w / 2, 220);
 
     // Frequency number
     ctx.fillStyle = '#fff';
-    ctx.font = '900 140px -apple-system, sans-serif';
-    ctx.fillText(resultData.freq + 'Hz', w / 2, 340);
+    ctx.font = '900 168px sans-serif';
+    ctx.fillText(resultData.freq + 'Hz', w / 2, 590);
 
     // Emoji
-    ctx.font = '100px sans-serif';
-    ctx.fillText(resultData.emoji, w / 2, 470);
+    ctx.font = '130px sans-serif';
+    ctx.fillText(resultData.emoji, w / 2, 780);
 
     // Title
     ctx.fillStyle = '#fff';
-    ctx.font = '700 48px -apple-system, sans-serif';
-    ctx.fillText(resultData.title, w / 2, 580);
+    ctx.font = 'bold 58px sans-serif';
+    ctx.fillText(resultData.title, w / 2, 920);
 
     // Subtitle
-    ctx.fillStyle = 'rgba(255,255,255,0.8)';
-    ctx.font = '400 30px -apple-system, sans-serif';
-    ctx.fillText(resultData.subtitle, w / 2, 640);
+    ctx.fillStyle = 'rgba(255,255,255,0.88)';
+    ctx.font = '34px sans-serif';
+    ctx.fillText(resultData.subtitle, w / 2, 1000);
 
-    // Love style
-    ctx.fillStyle = 'rgba(255,255,255,0.6)';
-    ctx.font = '400 26px -apple-system, sans-serif';
-    ctx.fillText(resultData.loveStyle, w / 2, 720);
+    // Love style & best match
+    ctx.fillStyle = 'rgba(255,255,255,0.72)';
+    ctx.font = '30px sans-serif';
+    ctx.fillText(resultData.loveStyle, w / 2, 1140);
+    ctx.fillText((window.i18n?.t('canvas.bestMatch') || 'Best Match:') + ' ' + resultData.bestMatch, w / 2, 1210);
 
-    // Best match
-    ctx.fillText((window.i18n?.t('canvas.bestMatch') || 'Best Match:') + ' ' + resultData.bestMatch, w / 2, 770);
-
-    // CTA
-    ctx.fillStyle = 'rgba(255,255,255,0.5)';
-    ctx.font = '400 26px -apple-system, sans-serif';
-    ctx.fillText(i18n?.t('premium.testYourFrequency') || "What's your love frequency? 👉 Love Frequency Test", w / 2, 900);
-
-    // Branding
-    ctx.fillStyle = 'rgba(255,255,255,0.35)';
-    ctx.font = '400 22px -apple-system, sans-serif';
-    ctx.fillText('DopaBrain', w / 2, 1020);
+    // CTA & Domain
+    ctx.fillStyle = 'rgba(255,255,255,0.75)';
+    ctx.font = 'bold 30px sans-serif';
+    ctx.fillText('dopabrain.com/love-frequency/', w / 2, 1760);
 
     // Download
-    const link = document.createElement('a');
-    link.download = `LoveFreq_${resultData.freq}Hz.png`;
-    link.href = canvas.toDataURL('image/png');
-    link.click();
+    try {
+        const link = document.createElement('a');
+        link.download = `LoveFreq_${resultData.freq}Hz.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+    } catch (e) {}
 
-    if (typeof gtag === 'function') gtag('event', 'save_image', { event_category: 'love_frequency' });
+    if (typeof gtag === 'function') {
+        gtag('event', 'save_image', {
+            event_category: 'love_frequency',
+            app_name: 'love-frequency',
+            result_type: `${resultData.freq}hz`,
+            save_surface: 'result_story_1080x1920'
+        });
+    }
 }
 
 // Retry
@@ -591,29 +613,60 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(() => {});
 }
 
-// Funnel bridge & language preservation
+// Funnel bridge, curated books & language preservation
 function initRelatedFunnels() {
     const urlParams = new URLSearchParams(window.location.search);
-    const lang = urlParams.get('lang') || (window.i18n ? window.i18n.currentLang : 'ko') || 'ko';
+    const lang = (window.i18n ? window.i18n.currentLang : null) || urlParams.get('lang') || 'ko';
     const base = (window.location.origin && window.location.origin !== 'null') ? window.location.origin : 'https://dopabrain.com';
     document.querySelectorAll('.related-grid a').forEach(link => {
-        const href = link.getAttribute('href');
-        if (!href || href.startsWith('http') || href.startsWith('#')) return;
+        const rawHref = link.getAttribute('data-base-href') || link.getAttribute('href');
+        if (!rawHref || rawHref.startsWith('http') || rawHref.startsWith('#')) return;
         try {
-            const url = new URL(href, base);
+            const url = new URL(rawHref, base);
             url.searchParams.set('lang', lang);
-            if (!url.searchParams.has('source')) url.searchParams.set('source', 'love_frequency_result');
+            url.searchParams.set('source', 'love_frequency_result');
             link.setAttribute('href', url.pathname + url.search);
         } catch(e) {}
         if (!link.dataset.trackedCta) {
             link.dataset.trackedCta = 'true';
             link.addEventListener('click', () => {
+                const activeLang = (window.i18n && window.i18n.currentLang) || lang;
                 if (typeof gtag === 'function') {
                     gtag('event', 'content_cta_click', {
                         cta_surface: 'love_frequency_related',
                         destination: link.getAttribute('href'),
                         source: 'love_frequency',
-                        lang: lang
+                        lang: activeLang
+                    });
+                }
+            });
+        }
+    });
+
+    const stores = { de: 'www.amazon.de', fr: 'www.amazon.fr', es: 'www.amazon.es', ja: 'www.amazon.co.jp', ko: 'www.amazon.com' };
+    const host = stores[lang] || 'www.amazon.com';
+    const curatedMap = {
+        fiveLoveLanguages: `https://${host}/dp/080241270X?tag=dopabrain-20`,
+        gettingLoveYouWant: `https://${host}/dp/1250310539?tag=dopabrain-20`
+    };
+    document.querySelectorAll('#curated-resources-card .curated-item').forEach(link => {
+        const key = link.getAttribute('data-curated-key');
+        if (curatedMap[key]) link.setAttribute('href', curatedMap[key]);
+        if (!link.dataset.trackedCurated) {
+            link.dataset.trackedCurated = 'true';
+            link.addEventListener('click', () => {
+                const activeLang = (window.i18n && window.i18n.currentLang) || lang;
+                if (typeof gtag === 'function') {
+                    gtag('event', 'curated_resource_click', {
+                        app_name: 'love-frequency',
+                        resource_key: key,
+                        content_locale: activeLang,
+                        cta_surface: 'curated_resources'
+                    });
+                    gtag('event', 'content_cta_click', {
+                        cta_type: 'curated_book',
+                        destination: link.getAttribute('href'),
+                        source: 'love_frequency'
                     });
                 }
             });

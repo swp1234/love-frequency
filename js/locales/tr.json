@@ -119,5 +119,15 @@
   },
   "game": {
     "back": "DopaBrain Ana Sayfa"
+  },
+  "curated": {
+    "title": "İlişkide Uyum İçin Önerilen Kitaplar",
+    "subtitle": "Duygusal uyum ve sağlıklı iletişimi güçlendiren klasik ilişki kaynakları.",
+    "book1Title": "Beş Sevgi Dili — Gary Chapman",
+    "book1Desc": "Partnerinizle sevgi ifade biçimlerinizi anlamanız için pratik başucu rehberi",
+    "book2Title": "İstediğin Aşka Kavuşmak — Harville Hendrix",
+    "book2Desc": "Bilinçsiz bağlanma örüntülerini fark edip sağlıklı ilişki kurma kılavuzu",
+    "cta": "Kitabı İncele",
+    "disclosure": "Ortaklık bildirimi: Amazon İş Ortağı olarak uygun satın alımlardan gelir elde edebiliriz."
   }
 }

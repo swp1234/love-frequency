@@ -25,7 +25,7 @@
     "spectrum": "🎵 My Frequency Spectrum",
     "playFreqBtn": "🎧 Play Frequency",
     "stopFreqBtn": "⏹️ Stop Frequency",
-    "premiumBtn": "🔓 AI Deep Compatibility Analysis & Couple Routines",
+    "premiumBtn": "🔓 Deep Compatibility Analysis & Couple Routines",
     "shareBtn": "📤 Share",
     "saveImageBtn": "📷 Save",
     "retryBtn": "🔄 Try Again",
@@ -65,7 +65,7 @@
   },
   "ads": {
     "banner": "Advertisement",
-    "waitMessage": "Your AI compatibility analysis will be ready shortly"
+    "waitMessage": "Your compatibility analysis will be ready shortly"
   },
   "recommendations": {
     "mbti": {
@@ -124,5 +124,15 @@
   },
   "game": {
     "back": "DopaBrain Home"
+  },
+  "curated": {
+    "title": "Curated Books for Deeper Connection",
+    "subtitle": "Evidence-backed relationship classics for emotional attunement and communication.",
+    "book1Title": "The 5 Love Languages — Gary Chapman",
+    "book1Desc": "Practical framework for understanding how you and your partner express care",
+    "book2Title": "Getting the Love You Want — Harville Hendrix & Helen LaKelly Hunt",
+    "book2Desc": "Classic guide to healing unconscious patterns and building conscious partnership",
+    "cta": "View Book",
+    "disclosure": "Affiliate disclosure: As an Amazon Associate, DopaBrain may earn from qualifying purchases."
   }
 }

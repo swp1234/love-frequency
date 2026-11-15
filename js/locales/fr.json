@@ -119,5 +119,15 @@
   },
   "game": {
     "back": "Accueil DopaBrain"
+  },
+  "curated": {
+    "title": "Lectures Recommandées pour votre Vie Amoureuse",
+    "subtitle": "Ouvrages de référence sur l’accord émotionnel et la communication de couple.",
+    "book1Title": "Les Langages de l’amour — Gary Chapman",
+    "book1Desc": "Approche concrète pour comprendre comment chacun exprime et reçoit l’affection",
+    "book2Title": "Le couple mode d’emploi — Harville Hendrix",
+    "book2Desc": "Guide classique pour comprendre les schémas affectifs et nourrir le dialogue",
+    "cta": "Voir le livre",
+    "disclosure": "Lien affilié : En tant que Partenaire Amazon, DopaBrain réalise un bénéfice sur les achats éligibles."
   }
 }

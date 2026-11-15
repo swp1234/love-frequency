@@ -119,5 +119,15 @@
   },
   "game": {
     "back": "Início DopaBrain"
+  },
+  "curated": {
+    "title": "Leituras Recomendadas para Conexão no Amor",
+    "subtitle": "Clássicos práticos sobre sintonia emocional, afeto e diálogo no relacionamento.",
+    "book1Title": "As 5 Linguagens do Amor — Gary Chapman",
+    "book1Desc": "Referência prática para entender como você e seu par demonstram cuidado",
+    "book2Title": "Como Conquistar o Amor que Você Deseja — Harville Hendrix",
+    "book2Desc": "Guia clássico para transformar padrões inconscientes em parceria consciente",
+    "cta": "Ver Livro",
+    "disclosure": "Divulgação de afiliados: Como Associado da Amazon, o DopaBrain pode ganhar com compras qualificadas."
   }
 }

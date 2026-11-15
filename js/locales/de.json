@@ -119,5 +119,15 @@
   },
   "game": {
     "back": "DopaBrain Startseite"
+  },
+  "curated": {
+    "title": "Buchempfehlungen für Liebe & Resonanz",
+    "subtitle": "Bewährte Beziehungsklassiker für emotionale Verbundenheit und ehrlichen Austausch.",
+    "book1Title": "Die 5 Sprachen der Liebe — Gary Chapman",
+    "book1Desc": "Praktischer Leitfaden dafür, wie Partner Zuneigung zeigen und empfinden",
+    "book2Title": "Soviel Liebe wie du brauchst — Harville Hendrix",
+    "book2Desc": "Klassiker über bewusste Partnerschaft und emotionale Bindungsmuster",
+    "cta": "Buch ansehen",
+    "disclosure": "Affiliate-Hinweis: Als Amazon-Partner verdient DopaBrain an qualifizierten Verkäufen."
   }
 }

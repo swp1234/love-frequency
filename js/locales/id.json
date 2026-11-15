@@ -24,7 +24,7 @@
     "spectrum": "🎵 Spektrum Frekuensi Saya",
     "playFreqBtn": "🎧 Putar Frekuensi",
     "stopFreqBtn": "⏹️ Hentikan Frekuensi",
-    "premiumBtn": "🔓 Analisis Kompatibilitas Mendalam AI & Rutinitas Pasangan",
+    "premiumBtn": "🔓 Analisis Kompatibilitas Mendalam & Rutinitas Pasangan",
     "shareBtn": "📤 Bagikan",
     "saveImageBtn": "📷 Simpan",
     "retryBtn": "🔄 Coba Lagi",
@@ -119,5 +119,15 @@
   },
   "game": {
     "back": "Beranda DopaBrain"
+  },
+  "curated": {
+    "title": "Bacaan Pilihan untuk Hubungan Harmonis",
+    "subtitle": "Buku klasik tepercaya untuk keselarasan emosional dan komunikasi pasangan.",
+    "book1Title": "The 5 Love Languages — Gary Chapman",
+    "book1Desc": "Kerangka praktis memahami cara Anda dan pasangan mengekspresikan kasih sayang",
+    "book2Title": "Getting the Love You Want — Harville Hendrix & Helen LaKelly Hunt",
+    "book2Desc": "Panduan klasik membangun kemitraan sadar dan komunikasi emosional",
+    "cta": "Lihat Buku",
+    "disclosure": "Pengungkapan afiliasi: Sebagai Amazon Associate, DopaBrain dapat memperoleh komisi dari pembelian yang memenuhi syarat."
   }
 }

@@ -119,5 +119,15 @@
   },
   "game": {
     "back": "Inicio DopaBrain"
+  },
+  "curated": {
+    "title": "Lecturas Recomendadas para Conectar Mejor",
+    "subtitle": "Clásicos sobre sintonía emocional, afecto y comunicación de pareja.",
+    "book1Title": "Los 5 Lenguajes del Amor — Gary Chapman",
+    "book1Desc": "Guía práctica para comprender cómo tú y tu pareja expresan y sienten el cariño",
+    "book2Title": "Conseguir el Amor que Quieres — Harville Hendrix",
+    "book2Desc": "Referencia clásica sobre vínculos conscientes y madurez afectiva en pareja",
+    "cta": "Ver Libro",
+    "disclosure": "Divulgación de afiliados: Como Afiliado de Amazon, DopaBrain puede ganar ingresos por compras elegibles."
   }
 }
