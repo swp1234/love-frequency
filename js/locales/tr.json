@@ -66,20 +66,20 @@
   },
   "recommendations": {
     "mbti": {
-      "name": "MBTI 연애 궁합",
-      "desc": "나와 찰떡인 MBTI 유형은?"
+      "name": "MBTI Aşk Uyumu",
+      "desc": "Hangi MBTI tipi seninle en uyumlu?"
     },
     "emotion": {
-      "name": "감정 온도계 테스트",
-      "desc": "나의 감정 온도는 몇 도?"
+      "name": "Duygu Sıcaklığı Testi",
+      "desc": "Duygusal sıcaklığın kaç derece?"
     },
     "kpop": {
-      "name": "K-POP 포지션 테스트",
-      "desc": "나의 아이돌 포지션은?"
+      "name": "K-POP Pozisyon Testi",
+      "desc": "İdol grubundaki rolün ne?"
     },
     "pastlife": {
-      "name": "전생 직업 테스트",
-      "desc": "나의 전생은 어떤 직업?"
+      "name": "Geçmiş Yaşam Mesleği",
+      "desc": "Geçmiş yaşamında mesleğin neydi?"
     }
   },
   "canvas": {
@@ -134,5 +134,9 @@
     "book2Desc": "Bilinçsiz bağlanma örüntülerini fark edip sağlıklı ilişki kurma kılavuzu",
     "cta": "Kitabı İncele",
     "disclosure": "Ortaklık bildirimi: Amazon İş Ortağı olarak uygun satın alımlardan gelir elde edebiliriz."
+  },
+  "ads": {
+    "banner": "Reklam",
+    "waitMessage": "Uyumluluk analiziniz kısa süre içinde hazır olacak"
   }
 }

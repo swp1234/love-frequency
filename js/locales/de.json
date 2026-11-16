@@ -66,20 +66,20 @@
   },
   "recommendations": {
     "mbti": {
-      "name": "MBTI 연애 궁합",
-      "desc": "나와 찰떡인 MBTI 유형은?"
+      "name": "MBTI Liebes-Kompatibilität",
+      "desc": "Welcher MBTI-Typ passt am besten zu dir?"
     },
     "emotion": {
-      "name": "감정 온도계 테스트",
-      "desc": "나의 감정 온도는 몇 도?"
+      "name": "Emotionstemperatur-Test",
+      "desc": "Wie hoch ist deine emotionale Wärme?"
     },
     "kpop": {
-      "name": "K-POP 포지션 테스트",
-      "desc": "나의 아이돌 포지션은?"
+      "name": "K-POP Positions-Test",
+      "desc": "Welche Rolle hättest du in einer Idol-Gruppe?"
     },
     "pastlife": {
-      "name": "전생 직업 테스트",
-      "desc": "나의 전생은 어떤 직업?"
+      "name": "Früheres-Leben-Berufstest",
+      "desc": "Was war dein Beruf in einem früheren Leben?"
     }
   },
   "canvas": {
@@ -134,5 +134,9 @@
     "book2Desc": "Klassiker über bewusste Partnerschaft und emotionale Bindungsmuster",
     "cta": "Buch ansehen",
     "disclosure": "Affiliate-Hinweis: Als Amazon-Partner verdient DopaBrain an qualifizierten Verkäufen."
+  },
+  "ads": {
+    "banner": "Anzeige",
+    "waitMessage": "Ihre Kompatibilitätsanalyse ist gleich bereit"
   }
 }

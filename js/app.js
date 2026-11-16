@@ -474,16 +474,50 @@ function shareResult() {
         .replace(/https:\/\/dopabrain\.com\/love-frequency\/(?:\?[^\s]*)?/g, shareUrl);
     if (navigator.share) {
         navigator.share({ title: i18n?.t('premium.shareTitle') || 'Love Frequency Test', text, url: shareUrl }).catch(() => {});
-    } else if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(shareUrl).then(() => showShareToast(i18n?.t('result.resultSharedMessage') || 'Copied!')).catch(() => {});
+    } else {
+        copyFallbackShare(shareUrl);
     }
     if (typeof gtag === 'function') gtag('event', 'share', { event_category: 'love_frequency', method: navigator.share ? 'native' : 'copy', content_type: 'quiz_result' });
 }
 
-function showShareToast(msg) {
-    if (typeof alert === 'function' && window.top === window && !navigator.webdriver) {
-        try { alert(msg); return; } catch (e) {}
+function copyFallbackShare(text) {
+    const done = () => showShareToast(i18n?.t('result.resultSharedMessage') || 'Copied!');
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done).catch(() => execCopyShare(text, done));
+    } else {
+        execCopyShare(text, done);
     }
+}
+
+function execCopyShare(text, onDone) {
+    try {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        if (ok && onDone) onDone();
+    } catch (e) {}
+}
+
+function showShareToast(msg) {
+    let toast = document.getElementById('lf-share-toast');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'lf-share-toast';
+        toast.setAttribute('role', 'status');
+        toast.setAttribute('aria-live', 'polite');
+        toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1f1638;color:#fff;padding:10px 18px;border-radius:999px;border:1px solid rgba(255,255,255,0.2);box-shadow:0 8px 24px rgba(0,0,0,0.4);z-index:9999;font-size:14px;opacity:0;transition:opacity 0.2s;pointer-events:none;';
+        document.body.appendChild(toast);
+    }
+    toast.textContent = msg;
+    toast.style.opacity = '1';
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => { toast.style.opacity = '0'; }, 2400);
 }
 
 // Save Story Card (1080x1920)

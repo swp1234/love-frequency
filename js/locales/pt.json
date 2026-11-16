@@ -66,20 +66,20 @@
   },
   "recommendations": {
     "mbti": {
-      "name": "MBTI 연애 궁합",
-      "desc": "나와 찰떡인 MBTI 유형은?"
+      "name": "Compatibilidade Amorosa MBTI",
+      "desc": "Qual tipo MBTI combina melhor com você?"
     },
     "emotion": {
-      "name": "감정 온도계 테스트",
-      "desc": "나의 감정 온도는 몇 도?"
+      "name": "Teste de Temperatura Emocional",
+      "desc": "Quantos graus tem a sua emoção?"
     },
     "kpop": {
-      "name": "K-POP 포지션 테스트",
-      "desc": "나의 아이돌 포지션은?"
+      "name": "Teste de Posição K-POP",
+      "desc": "Qual é o seu papel em um grupo idol?"
     },
     "pastlife": {
-      "name": "전생 직업 테스트",
-      "desc": "나의 전생은 어떤 직업?"
+      "name": "Profissão de Vida Passada",
+      "desc": "Qual era a sua profissão em uma vida passada?"
     }
   },
   "canvas": {
@@ -134,5 +134,9 @@
     "book2Desc": "Guia clássico para transformar padrões inconscientes em parceria consciente",
     "cta": "Ver Livro",
     "disclosure": "Divulgação de afiliados: Como Associado da Amazon, o DopaBrain pode ganhar com compras qualificadas."
+  },
+  "ads": {
+    "banner": "Publicidade",
+    "waitMessage": "Sua análise de compatibilidade estará pronta em breve"
   }
 }

@@ -66,20 +66,20 @@
   },
   "recommendations": {
     "mbti": {
-      "name": "MBTI 연애 궁합",
-      "desc": "나와 찰떡인 MBTI 유형은?"
+      "name": "Kecocokan Cinta MBTI",
+      "desc": "Tipe MBTI mana yang paling cocok denganmu?"
     },
     "emotion": {
-      "name": "감정 온도계 테스트",
-      "desc": "나의 감정 온도는 몇 도?"
+      "name": "Tes Suhu Emosi",
+      "desc": "Berapa derajat kehangatan emosimu?"
     },
     "kpop": {
-      "name": "K-POP 포지션 테스트",
-      "desc": "나의 아이돌 포지션은?"
+      "name": "Tes Posisi K-POP",
+      "desc": "Apa posisimu di grup idol?"
     },
     "pastlife": {
-      "name": "전생 직업 테스트",
-      "desc": "나의 전생은 어떤 직업?"
+      "name": "Tes Profesi Kehidupan Lalu",
+      "desc": "Apa profesimu di kehidupan sebelumnya?"
     }
   },
   "canvas": {
@@ -134,5 +134,9 @@
     "book2Desc": "Panduan klasik membangun kemitraan sadar dan komunikasi emosional",
     "cta": "Lihat Buku",
     "disclosure": "Pengungkapan afiliasi: Sebagai Amazon Associate, DopaBrain dapat memperoleh komisi dari pembelian yang memenuhi syarat."
+  },
+  "ads": {
+    "banner": "Iklan",
+    "waitMessage": "Analisis kecocokan Anda akan segera siap"
   }
 }
