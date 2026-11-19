@@ -138,5 +138,11 @@
     "book2Desc": "Classic guide to healing unconscious patterns and building conscious partnership",
     "cta": "View Book",
     "disclosure": "Affiliate disclosure: As an Amazon Associate, DopaBrain may earn from qualifying purchases."
+  },
+  "nextStep": {
+    "label": "Recommended Next Step",
+    "title": "HSP Sensitivity Test",
+    "desc": "Explore how sensory and emotional sensitivity shape your daily reactions in 3 minutes.",
+    "cta": "Take HSP Test →"
   }
 }

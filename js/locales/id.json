@@ -138,5 +138,11 @@
   "ads": {
     "banner": "Iklan",
     "waitMessage": "Analisis kecocokan Anda akan segera siap"
+  },
+  "nextStep": {
+    "label": "Langkah Berikutnya",
+    "title": "Tes Sensitivitas HSP",
+    "desc": "Kenali bagaimana kepekaan sensorik dan emosimu memengaruhi keseharian dalam 3 menit.",
+    "cta": "Mulai Tes HSP →"
   }
 }

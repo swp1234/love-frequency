@@ -138,5 +138,11 @@
   "ads": {
     "banner": "Anzeige",
     "waitMessage": "Ihre Kompatibilitätsanalyse ist gleich bereit"
+  },
+  "nextStep": {
+    "label": "Empfohlener nächster Schritt",
+    "title": "HSP-Sensibilitätstest",
+    "desc": "Entdecke in 3 Minuten, wie sensorische und emotionale Tiefe deinen Alltag prägen.",
+    "cta": "HSP-Test starten →"
   }
 }

@@ -138,5 +138,11 @@
   "ads": {
     "banner": "Reklam",
     "waitMessage": "Uyumluluk analiziniz kısa süre içinde hazır olacak"
+  },
+  "nextStep": {
+    "label": "Önerilen Sonraki Adım",
+    "title": "HSP Hassasiyet Testi",
+    "desc": "Duyusal ve duygusal hassasiyetinin günlük tepkilerini nasıl şekillendirdiğini keşfet.",
+    "cta": "HSP Testini Başlat →"
   }
 }

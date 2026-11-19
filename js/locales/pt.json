@@ -138,5 +138,11 @@
   "ads": {
     "banner": "Publicidade",
     "waitMessage": "Sua análise de compatibilidade estará pronta em breve"
+  },
+  "nextStep": {
+    "label": "Próximo passo recomendado",
+    "title": "Teste de Alta Sensibilidade HSP",
+    "desc": "Descubra em 3 minutos como sua sensibilidade molda suas reações diárias.",
+    "cta": "Fazer Teste HSP →"
   }
 }
